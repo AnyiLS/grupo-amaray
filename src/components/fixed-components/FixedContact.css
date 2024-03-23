@@ -1,0 +1,19 @@
+.fixed-contact:hover .e-c-f {
+  fill: #001f5f;
+}
+
+.fixed-contact:hover .d-c-f {
+  fill: #dcdcdc;
+}
+
+.fixed-contact {
+  width: 70px;
+  height: 70px;
+}
+
+@media (min-height: 626px) {
+  .fixed-contact {
+    width: 90px;
+    height: 90px;
+  }
+}

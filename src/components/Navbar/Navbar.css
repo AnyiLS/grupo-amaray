@@ -1,0 +1,126 @@
+:root {
+	--red-color: #e7002a;
+	--light-red-color: #e40032;
+	--blue-color: #001f5f;
+	--dark-blue-color: #1c164e;
+	--white-color: #fff;
+}
+
+.a {
+	fill: none;
+}
+
+.b,
+.d {
+	fill: var(--white-color);
+}
+
+.c {
+	fill: var(--light-red-color);
+	opacity: 1 !important;
+}
+
+.c:hover {
+	opacity: 0.52 !important;
+}
+
+.d {
+	font-size: 16px;
+	font-family: Kiona-Bold, Kiona;
+	font-weight: 700;
+}
+
+.e {
+	fill: #1c164e;
+}
+.f {
+	fill: #e7002a;
+}
+.g,
+.i {
+	fill: #001f5f;
+}
+.g {
+	font-size: 18px;
+	font-family: Silka-Regular, Silka;
+}
+.h {
+	clip-path: url(#e);
+}
+.j {
+	filter: url(#c);
+}
+.k {
+	filter: url(#a);
+}
+
+.home-menu-b {
+	font-size: 18px;
+	font-family: Silka-Regular, Silka;
+}
+
+.home-menu-c {
+	fill: none;
+	stroke: #001f5f;
+}
+
+.trayectoria-b {
+	font-size: 18px;
+	font-family: Silka-Regular, Silka;
+}
+.trayectoria-c {
+	fill: none;
+	stroke: #e40032;
+}
+
+.solucion-b {
+	fill: #fff;
+	font-size: 18px;
+	font-family: Silka-Regular, Silka;
+}
+.solucion-c {
+	fill: none;
+	stroke: #e40032;
+}
+
+.actualidad-b {
+	font-size: 18px;
+	font-family: Silka-Regular, Silka;
+}
+.actualidad-c {
+	fill: none;
+	stroke: #e40032;
+}
+
+.contactenos-b {
+	font-size: 18px;
+	font-family: Silka-Regular, Silka;
+}
+.contactenos-c {
+	fill: none;
+	stroke: #e40032;
+}
+
+.trabaje-b {
+	font-size: 18px;
+	font-family: "Silka-Regular";
+}
+.trabaje-c {
+	fill: none;
+	stroke: #e40032;
+}
+
+.etica-b,
+.actu-b {
+	fill: #fff;
+	font-size: 18px;
+	font-family: "Silka-Regular";
+}
+.etica-c {
+	fill: none;
+	stroke: #e40032;
+}
+.actualidad-c {
+	stroke: #e40032;
+	fill: none;
+}

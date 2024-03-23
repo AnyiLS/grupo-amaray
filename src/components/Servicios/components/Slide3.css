@@ -1,0 +1,370 @@
+.a-cifras-3,
+.ae-cifras-3,
+.af-cifras-3,
+.c-cifras-3,
+.f-cifras-3,
+.g-cifras-3,
+.h-cifras-3,
+.i-cifras-3,
+.j-cifras-3,
+.k-cifras-3,
+.l-cifras-3,
+.m-cifras-3,
+.n-cifras-3,
+.o-cifras-3,
+.p-cifras-3,
+.q-cifras-3,
+.r-cifras-3,
+.z-cifras-3 {
+	fill: none;
+}
+.b-cifras-3,
+.s-cifras-3 {
+	fill: #fff;
+}
+.b-cifras-3 {
+	stroke: #707070;
+}
+.c-cifras-3 {
+	filter: url(#a-cifras-3);
+}
+.d-cifras-3 {
+	fill: #aca6a6;
+}
+.e-cifras-3 {
+	fill: #afafaf;
+}
+.f-cifras-3 {
+	filter: url(#c-cifras-3);
+}
+.g-cifras-3 {
+	filter: url(#e-cifras-3);
+}
+.h-cifras-3 {
+	filter: url(#g-cifras-3);
+}
+.i-cifras-3 {
+	filter: url(#i-cifras-3);
+}
+.j-cifras-3 {
+	filter: url(#k-cifras-3);
+}
+.k-cifras-3 {
+	filter: url(#m-cifras-3);
+}
+.l-cifras-3 {
+	filter: url(#o-cifras-3);
+}
+.m-cifras-3 {
+	filter: url(#q-cifras-3);
+}
+.n-cifras-3 {
+	filter: url(#s-cifras-3);
+}
+.o-cifras-3 {
+	filter: url(#u-cifras-3);
+}
+.p-cifras-3 {
+	filter: url(#w-cifras-3);
+}
+.q-cifras-3 {
+	filter: url(#y-cifras-3);
+}
+.r-cifras-3 {
+	filter: url(#aa-cifras-3);
+}
+.t-cifras-3 {
+	clip-path: url(#ac-cifras-3);
+}
+.u-cifras-3 {
+	fill: #e7002a;
+	stroke: #e40032;
+}
+.ag-cifras-3,
+.bt-cifras-3,
+.v-cifras-3,
+.w-cifras-3 {
+	fill: #001f5f;
+}
+.ac-cifras-3,
+.ae-cifras-3,
+.v-cifras-3,
+.z-cifras-3 {
+	stroke: #001f5f;
+}
+.x-cifras-3 {
+	clip-path: url(#ad-cifras-3);
+}
+.y-cifras-3 {
+	fill: #f9f9f9;
+}
+.ac-cifras-3,
+.z-cifras-3 {
+	stroke-miterlimit: 3.864;
+	stroke-width: 0.25px;
+}
+.aa-cifras-3,
+.ac-cifras-3 {
+	fill: #c5dbf7;
+}
+.ab-cifras-3 {
+	fill: #4899d5;
+}
+.ad-cifras-3 {
+	clip-path: url(#ag-cifras-3);
+}
+.ae-cifras-3,
+.af-cifras-3 {
+	stroke-miterlimit: 10;
+	stroke-width: 3.044px;
+}
+.af-cifras-3 {
+	stroke: #e7002a;
+}
+.ag-cifras-3 {
+	font-size: 70px;
+}
+.ag-cifras-3,
+.bp-cifras-3,
+.bq-cifras-3,
+.bt-cifras-3 {
+	font-family: Silka-SemiBold, Silka;
+	font-weight: 600;
+}
+.ah-cifras-3 {
+	clip-path: url(#ah-cifras-3);
+}
+.ai-cifras-3 {
+	fill: #e40032;
+}
+.aj-cifras-3,
+.au-cifras-3 {
+	mix-blend-mode: multiply;
+}
+.aj-cifras-3,
+.ap-cifras-3,
+.au-cifras-3,
+.bf-cifras-3,
+.bh-cifras-3,
+.bl-cifras-3 {
+	isolation: isolate;
+}
+.ak-cifras-3 {
+	fill: #eeebeb;
+}
+.al-cifras-3 {
+	fill: #d6d6d6;
+}
+.am-cifras-3 {
+	clip-path: url(#ai-cifras-3);
+}
+.an-cifras-3 {
+	clip-path: url(#aj-cifras-3);
+}
+.ao-cifras-3 {
+	fill: #9d9d9e;
+}
+.ap-cifras-3 {
+	opacity: 0.3;
+}
+.ap-cifras-3,
+.bf-cifras-3,
+.bh-cifras-3,
+.bl-cifras-3 {
+	mix-blend-mode: screen;
+}
+.aq-cifras-3 {
+	clip-path: url(#al-cifras-3);
+}
+.ar-cifras-3 {
+	clip-path: url(#am-cifras-3);
+}
+.as-cifras-3 {
+	fill: url(#an-cifras-3);
+}
+.at-cifras-3 {
+	fill: #787878;
+}
+.au-cifras-3,
+.bf-cifras-3 {
+	opacity: 0.2;
+}
+.av-cifras-3 {
+	clip-path: url(#ao-cifras-3);
+}
+.aw-cifras-3 {
+	clip-path: url(#ap-cifras-3);
+}
+.ax-cifras-3 {
+	clip-path: url(#aq-cifras-3);
+}
+.ay-cifras-3 {
+	clip-path: url(#ar-cifras-3);
+}
+.az-cifras-3 {
+	fill: url(#as-cifras-3);
+}
+.ba-cifras-3 {
+	clip-path: url(#at-cifras-3);
+}
+.bb-cifras-3 {
+	clip-path: url(#au-cifras-3);
+}
+.bc-cifras-3 {
+	clip-path: url(#av-cifras-3);
+}
+.bd-cifras-3 {
+	clip-path: url(#aw-cifras-3);
+}
+.be-cifras-3 {
+	clip-path: url(#ax-cifras-3);
+}
+.bg-cifras-3 {
+	clip-path: url(#ay-cifras-3);
+}
+.bh-cifras-3 {
+	opacity: 0.1;
+}
+.bi-cifras-3 {
+	clip-path: url(#az-cifras-3);
+}
+.bj-cifras-3 {
+	clip-path: url(#ba-cifras-3);
+}
+.bk-cifras-3 {
+	fill: url(#bb-cifras-3);
+}
+.bl-cifras-3 {
+	opacity: 0.4;
+}
+.bm-cifras-3 {
+	clip-path: url(#bc-cifras-3);
+}
+.bn-cifras-3 {
+	clip-path: url(#bd-cifras-3);
+}
+.bo-cifras-3 {
+	fill: #e81d2c;
+}
+.bp-cifras-3,
+.bq-cifras-3
+.bs-cifras-3 {
+	fill: #182856;
+}
+.bp-cifras-3,
+.bs-cifras-3 {
+	font-size: 24px;
+}
+.bq-cifras-3,
+.bt-cifras-3 {
+	font-size: 32px;
+}
+.br-cifras-3,
+.bs-cifras-3 {
+	font-family: Silka-Regular, Silka;
+}
+.br-cifras-3 {
+	font-weight: 400;
+}
+.bu-cifras-3 {
+	clip-path: url(#ng-cifras-3);
+}
+.bv-cifras-3 {
+	clip-path: url(#nh-cifras-3);
+}
+.bw-cifras-3 {
+	clip-path: url(#nj-cifras-3);
+}
+.bx-cifras-3 {
+	clip-path: url(#nk-cifras-3);
+}
+.by-cifras-3 {
+	clip-path: url(#nm-cifras-3);
+}
+.bz-cifras-3 {
+	clip-path: url(#nn-cifras-3);
+}
+.ca-cifras-3 {
+	fill: url(#no-cifras-3);
+}
+.cb-cifras-3 {
+	clip-path: url(#np-cifras-3);
+}
+.cc-cifras-3 {
+	clip-path: url(#nq-cifras-3);
+}
+.cd-cifras-3 {
+	clip-path: url(#ns-cifras-3);
+}
+.ce-cifras-3 {
+	clip-path: url(#nt-cifras-3);
+}
+.cf-cifras-3 {
+	fill: url(#nu-cifras-3);
+}
+.cg-cifras-3 {
+	clip-path: url(#nv-cifras-3);
+}
+.ch-cifras-3 {
+	clip-path: url(#nw-cifras-3);
+}
+.ci-cifras-3 {
+	fill: url(#nx-cifras-3);
+}
+.cj-cifras-3 {
+	clip-path: url(#oa-cifras-3);
+}
+.ck-cifras-3 {
+	clip-path: url(#ob-cifras-3);
+}
+.cl-cifras-3 {
+	clip-path: url(#od-cifras-3);
+}
+.cm-cifras-3 {
+	clip-path: url(#oe-cifras-3);
+}
+.cn-cifras-3 {
+	filter: url(#ne-cifras-3);
+}
+.co-cifras-3 {
+	filter: url(#mg-cifras-3);
+}
+.cp-cifras-3 {
+	filter: url(#li-cifras-3);
+}
+.cq-cifras-3 {
+	filter: url(#kk-cifras-3);
+}
+.cr-cifras-3 {
+	filter: url(#jm-cifras-3);
+}
+.cs-cifras-3 {
+	filter: url(#io-cifras-3);
+}
+.ct-cifras-3 {
+	filter: url(#hq-cifras-3);
+}
+.cu-cifras-3 {
+	filter: url(#gs-cifras-3);
+}
+.cv-cifras-3 {
+	filter: url(#fu-cifras-3);
+}
+.cw-cifras-3 {
+	filter: url(#ew-cifras-3);
+}
+.cx-cifras-3 {
+	filter: url(#dy-cifras-3);
+}
+.cy-cifras-3 {
+	filter: url(#da-cifras-3);
+}
+.cz-cifras-3 {
+	filter: url(#cc-cifras-3);
+}
+.da-cifras-3 {
+	filter: url(#be-cifras-3);
+}
+.db-cifras-3 {
+	filter: url(#ae-cifras-3);
+}

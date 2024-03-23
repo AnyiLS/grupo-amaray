@@ -1,0 +1,96 @@
+.a-2,
+.e-2,
+.f-2 {
+	fill: none;
+}
+.a-2 {
+	stroke: rgba(0, 0, 0, 0);
+}
+.b-2 {
+	fill: #001f5f;
+}
+.c {
+	opacity: 0.52;
+}
+.d-2 {
+	clip-path: url(#a-2);
+}
+.e-2 {
+	stroke: #fff;
+}
+.e-2,
+.f-2 {
+	stroke-miterlimit: 10;
+	stroke-width: 1.074px;
+}
+.f-2 {
+	stroke: #db032e;
+}
+.g-2 {
+	fill: #fff;
+	font-size: 100px;
+}
+.g-2,
+.j-2 {
+	font-family: ""Kiona-Bold"";
+	font-weight: 700;
+}
+.h-2 {
+	fill: url(#b-2);
+}
+.i-2 {
+	opacity: 0.45;
+	fill: url(#e-2);
+}
+.j-2 {
+	fill: rgba(255, 255, 255, 0.75);
+	font-size: 49px;
+}
+.k-2 {
+	fill: url(#h-2);
+}
+.l-2 {
+	opacity: 0.7;
+	fill: url(#k-2);
+}
+.m-2 {
+	fill: url(#n-2);
+}
+.n-2,
+.p-2 {
+	opacity: 0.6;
+}
+.n-2,
+.p-2,
+.s-2,
+.u-2 {
+	mix-blend-mode: multiply;
+	isolation: isolate;
+}
+.n-2 {
+	fill: url(#q-2);
+}
+.o-2 {
+	fill: url(#r-2);
+}
+.p-2 {
+	fill: url(#u-2);
+}
+.q-2 {
+	filter: url(#s-2);
+}
+.r-2 {
+	filter: url(#o-2);
+}
+.s-2 {
+	filter: url(#l-2);
+}
+.t-2 {
+	filter: url(#i-2);
+}
+.u-2 {
+	filter: url(#f-2);
+}
+.v-2 {
+	filter: url(#c-2);
+}

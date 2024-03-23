@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Kiona-Bold";
+    src: url('../fonts/KIONA/Kiona-Bold.ttf')
+}
+
+@font-face {
+    font-family: "Silka-Regular";
+    src: url('../fonts/SILKA/Silka\ Regular.otf')
+}
+
+@font-face {
+    font-family: "Silka-Semibold";
+    src: url('../fonts/SILKA/Silka\ SemiBold.otf')
+}
+
+@font-face {
+    font-family: "Silka-Bold";
+    src: url('../fonts/SILKA/Silka\ Bold.otf')
+}
+
+body {
+    font-family: "Kiona-Bold";
+}
