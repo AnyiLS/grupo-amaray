@@ -6,6 +6,8 @@ import Productos from 'components/Productos/Productos'
 import Historia from 'components/Historia/Historia'
 import Reconocimientos from 'components/Reconocimientos/Reconocimientos'
 import Responsabilidad from 'components/Responsabilidad/Responsabilidad'
+import Biomedico from 'components/Biomedico/Biomedico'
+import Eventos from 'components/Eventos/Eventos'
 
 const useRouter = () => {
 	const {
@@ -57,6 +59,14 @@ const useRouter = () => {
 		{
 			path: 'responsabilidad',
 			element: <Responsabilidad />,
+		},
+		{
+			path: 'biomedico',
+			element: <Biomedico />,
+		},
+		{
+			path: 'eventos',
+			element: <Eventos />,
 		},
 		{
 			path: 'productos',

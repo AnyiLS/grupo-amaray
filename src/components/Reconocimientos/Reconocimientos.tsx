@@ -11,7 +11,7 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 				<defs>
 					<style>
 						{
-							'.a-lin{fill:#e7002a;}.b-lin,.f-lin,.i-lin,.n-lin,.o-lin{fill:#001f5f;}.c-lin{fill:#e40032;}.d-lin{fill:#fff;}.e-lin{fill:url(#c-lin);}.f-lin{font-size:24px;}.f-lin,.i-lin,.k-lin{font-family:Silka-SemiBold, Silka;font-weight:600;}.g-lin,.m-lin{opacity:0.5;}.h-lin{fill:url(#f-lin);}.i-lin{font-size:18px;}.j-lin{fill:url(#i-lin);}.k-lin{fill:#182856;font-size:12px;}.l,.m-lin{fill:#c7c7cc;}.n-lin{font-size:40px;font-family:Silka-Bold, Silka;}.n-lin,.o-lin{font-weight:700;}.o-lin{font-size:70px;font-family:Kiona-Bold, Kiona;}.p-lin{filter:url(#l-lin);}.q-lin{filter:url(#j-lin);}.r-lin{filter:url(#g-lin);}.s-lin{filter:url(#d-lin);}.t-lin{filter:url(#a-lin);}'
+							'.a-lin{fill:#e7002a;}.b-lin,.f-lin,.i-lin,.n-lin,.o-lin{fill:#001f5f;}.c-lin{fill:#e40032;}.d-lin{fill:#fff;}.e-lin{fill:url(#c-lin);}.f-lin{font-size:24px;}.f-lin,.i-lin,.k-lin{font-family:Silka-SemiBold, Silka;font-weight:600;}.g-lin,.m-lin{opacity:0.5;}.h-lin{fill:url(#f-lin);}.i-lin{font-size:18px;}.j-lin{fill:url(#i-lin);}.k-lin{fill:#182856;font-size:12px;}.l,.m-lin{fill:#c7c7cc;}.n-lin{font-size:40px;font-family:Silka-Bold, Silka;}.n-lin,.o-lin{font-weight:700;}.o-lin{font-size:70px;font-family:Kiona-Bold, Kiona;}.p-lin{filter:url(#l-lin);}.l-lin{fill:#C7C7CC;}.q-lin{filter:url(#j-lin);}.r-lin{filter:url(#g-lin);}.s-lin{filter:url(#d-lin);}.t-lin{filter:url(#a-lin);}'
 						}
 					</style>
 					<filter
@@ -310,7 +310,6 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 					</tspan>
 				</text>
 			</svg>
-
 		</div>
 	)
 }
