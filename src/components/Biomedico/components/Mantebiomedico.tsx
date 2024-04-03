@@ -1,12 +1,17 @@
 import React from 'react'
 
-const Mantebiomedico: React.FC = (): JSX.Element => {
+export interface IMantenimiento {
+	onClick: () => void
+}
+
+const Mantebiomedico: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 	return (
 		<div>
 			<svg  width="100%"
 				height={'100%'}
 				viewBox="0 0 1920 1080"
-				preserveAspectRatio="none">
+				preserveAspectRatio="none" 
+				onClick={onClick}>
 				<defs>
 					<style>
 						{

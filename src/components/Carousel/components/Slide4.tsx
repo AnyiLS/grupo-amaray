@@ -4,6 +4,7 @@ import TopRightAsta from './components/toprightasta'
 import TopLeftAsta from './components/topleftasta'
 import DownLeftAsta from './components/downleftasta'
 import DownRightAsta from './components/downrightasta'
+import Tooltip from './Tooltip'
 
 interface ISlide {
 	height: string
@@ -585,6 +586,9 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn }): JSX.Element => {
 					style={{ fill: '#fff' }}
 					d="M45.263,0V46.781L85.8,23.389,66.44,12.217Z"
 					transform="rotate(180)"></path>
+			</g>
+			<g transform='translate(158 700)'>
+				<Tooltip/>
 			</g>
 		</svg>
 	)

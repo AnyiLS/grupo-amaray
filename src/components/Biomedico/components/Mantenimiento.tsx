@@ -1,12 +1,14 @@
 import React from 'react'
+import { IMantenimiento } from './Mantebiomedico'
 
-const Mantenimiento: React.FC = (): JSX.Element => {
+const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 	return (
 		<div>
 			<svg  width="100%"
 				height={'100%'}
 				viewBox="0 0 1920 1080"
-				preserveAspectRatio="none">
+				preserveAspectRatio="none"
+				onClick={onClick}>
 				<defs>
 					<style>
 						{
@@ -82,7 +84,7 @@ const Mantenimiento: React.FC = (): JSX.Element => {
 					height={81}
 					transform="translate(331 786)"
 				/>
-				<g transform="translate(1325.264 852)">
+				<g transform="translate(1325.264 852)" onClick={onClick}>
 					<g
 						className="l"
 						transform="matrix(1, 0, 0, 1, -1325.26, -852)">
