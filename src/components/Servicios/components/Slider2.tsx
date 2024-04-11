@@ -1,141 +1,415 @@
-import React from "react";
+import React from 'react'
+import Slider2Card4 from './components/Slider2Card4'
+import Slider2Card1 from './components/Slider2Card1'
+import Slider2Card2 from './components/Slider2Card2'
+import Slider2Card3 from './components/Slider2Card3'
 interface ISlider {
-  height: string;
-  index: number
+	height: string
+	index: number
 }
 
 export const Slider2: React.FC<ISlider> = ({ height }) => {
-  const [grandImage, setGrandImage] = React.useState<boolean>(false);
-  return (
-    <svg  
-      width="100%"
-      height={height}
-      viewBox="0 0 1920 1080"
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <style>
-          {
-            ".a-cifras-2,.c-cifras-2{fill:none;}.b-cifras-2,.i-cifras-2,.j-cifras-2{fill:#fff;}.b-cifras-2{stroke:#707070;}.c-cifras-2{stroke:#001f5f;stroke-miterlimit:10;stroke-width:3.044px;}.d-cifras-2{clip-path:url(#a-cifras-2);}.e-cifras-2{fill:url(#b-cifras-2);}.f-cifras-2,.l-cifras-2{fill:#e40032;}.f-cifras-2{font-size:70px;font-family:Silka-SemiBold, Silka;font-weight:600;}.g-cifras-2{fill:#182856;font-size:24px;font-family:Silka-Regular, Silka;}.h-cifras-2{fill:#001f5f;}.i-cifras-2{font-size:28px;font-family:'Kiona-Bold';font-weight:700;}.k-cifras-2{clip-path:url(#e-cifras-2);}.m-cifras-2{stroke:none;}.n-cifras-2{filter:url(#c-cifras-2);}"
-          }
-        </style>
-        <clipPath id="a-cifras-2">
-          <rect className="a-cifras-2" width={420} height={191.862} />
-        </clipPath>
-        <pattern
-          id="b-cifras-2"
-          width={1}
-          height={1}
-          viewBox={!grandImage ? "0 0 420 191" : "0 0 946 442"}
-        >
-          <image
-            preserveAspectRatio="xMidYMid slice"
-            width={grandImage ? "946" : '420'}
-            height={grandImage ? "442" : '191'}
-            xlinkHref={
-              !grandImage
-                ? "/images/servicios_2.jpg"
-                : "/images/servicios_2_grand.png"
-            }
-          />
-        </pattern>
-        <filter
-          id="c-cifras-2"
-          x={1224.859}
-          y={786.434}
-          width={390.995}
-          height={98.849}
-          filterUnits="userSpaceOnUse"
-        >
-          <feOffset dy={3} />
-          <feGaussianBlur stdDeviation={3} result="d" />
-          <feFlood floodOpacity={0.4} />
-          <feComposite operator="in" in2="d" />
-          <feComposite in="SourceGraphic" />
-        </filter>
-        <clipPath id="e-cifras-2">
-        <rect className="b-cifras-2" width={930.007} height={425.061} />
-          {/* <rect className="b-cifras-2" width={700.187} height={651.976} /> */}
-        </clipPath>
-      </defs>
-      <g className="b-cifras-2" transform="translate(0 0.333)">
-        <rect className="m" width={1920} height={1080} />
-        <rect
-          className="a-cifras-2"
-          x={0.5}
-          y={0.5}
-          width={1919}
-          height={1079}
-        />
-      </g>
-      <path
-        className="c-cifras-2"
-        d="M1930.082,947.053h609.905c87.931,0,167.24-62.321,201.067-158L2895.83,351.285"
-        transform="translate(-1930.082 -348.945)"
-      />
-      <rect
-        className="a-cifras-2"
-        width={1920}
-        height={1078.026}
-        transform="translate(0 2.34)"
-      />
-      <g className="d-cifras-2" style={{ clipPath: 'url(#e-cifras-2)' }} transform="translate(-9 -5)">
-        {grandImage ? (
-          <path
-            className="e-cifras-2"
-            d="M606.627,425.061H0V0H930.007L810.8,288.472A220.933,220.933,0,0,1,606.627,425.061"
-            onClick={() => setGrandImage(!grandImage)}
-          />
-        ) : (
-          <path
-            className="e-cifras-2"
-            d="M273.959,191.862H0V0H420L366.164,130.209a99.776,99.776,0,0,1-92.206,61.653"
-            onClick={() => setGrandImage(!grandImage)}
-          />
-        )}
-      </g>
-      <text className="f-cifras-2" transform="translate(281 700.488)">
-        <tspan x={0} y={66}>
-          {"SERVICIO POSVENTA"}
-        </tspan>
-      </text>
-      <text className="g-cifras-2" transform="translate(281 808.283)">
-        <tspan x={0} y={23}>
-          {"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, "}
-        </tspan>
-        <tspan x={0} y={51}>
-          {"sed diam nonummy nibh euismod tincidunt ut laoreet "}
-        </tspan>
-        <tspan x={0} y={79}>
-          {"dolore magna aliquam erat volutpat. "}
-        </tspan>
-      </text>
-      <g transform="translate(1233.859 792.434)">
-        <g className="n" transform="matrix(1, 0, 0, 1, -1233.86, -792.43)">
-          <path
-            className="h-cifras-2"
-            d="M372.995,0H76.506C45.669,0,17.978,23.591,6.717,59.456L0,80.849H294.03c32.854,0,62.27-25.435,73.843-63.849Z"
-            transform="translate(1233.86 792.43)"
-          />
-        </g>
-        <text className="i-cifras-2" transform="translate(79.497 51.425)">
-          <tspan x={0} y={0}>
-            {"ConoceM\xE1s"}
-          </tspan>
-        </text>
-        <path
-          className="j-cifras-2"
-          d="M45.263,0V24.412L61.308,12.2l-7.664-5.83Z"
-          transform="translate(246.859 28.219)"
-        />
-      </g>
-      <g className="k-cifras-2" transform="translate(1920 0.301) rotate(90)">
-        <path
-          className="l-cifras-2"
-          d="M438.029,472.779,541.881,614.14a3.937,3.937,0,0,1,.737,2.271l.59,110.667a3.878,3.878,0,0,1-3.85,3.879l-15.443.074a3.856,3.856,0,0,1-3.879-3.835l-.206-39.249-55.827.28.206,39.263a3.859,3.859,0,0,1-3.849,3.879l-15.443.074a3.833,3.833,0,0,1-3.864-3.835l-.531-101.669a3.846,3.846,0,0,1,3.835-3.879l15.443-.089a3.878,3.878,0,0,1,3.879,3.849l.207,39.249,55.827-.28-.221-41.992L425.2,494.417l-80.223.413L252.021,624.2l.206,41.978,55.842-.295-.207-39.249a3.846,3.846,0,0,1,3.835-3.879l15.443-.088a3.859,3.859,0,0,1,3.879,3.85l.531,101.669a3.865,3.865,0,0,1-3.835,3.879l-15.443.074a3.855,3.855,0,0,1-3.879-3.835l-.206-39.264-55.827.3.206,39.264a3.878,3.878,0,0,1-3.85,3.879l-15.443.074a3.865,3.865,0,0,1-3.879-3.835l-.575-110.666a3.857,3.857,0,0,1,.723-2.272L331.9,473.325a3.9,3.9,0,0,1,3.112-1.608L434.9,471.2a3.837,3.837,0,0,1,3.127,1.578M277.2,357.2l-167.1-53.32a3.737,3.737,0,0,0-2.375.015L2.648,338.631A3.864,3.864,0,0,0,.2,343.513l4.838,14.661a3.858,3.858,0,0,0,4.882,2.448l37.258-12.316,17.537,53.01L27.442,413.633a3.864,3.864,0,0,0-2.448,4.882l4.838,14.661a3.876,3.876,0,0,0,4.882,2.448l96.536-31.918a3.852,3.852,0,0,0,2.448-4.882l-4.838-14.661a3.876,3.876,0,0,0-4.882-2.449L86.707,394.046l-17.523-53.01,39.854-13.186L260.8,376.287l12.4,37.493,12.782,38.66L193.022,581.809,153.154,594.98l-17.523-53.01L172.9,529.654a3.864,3.864,0,0,0,2.448-4.882L170.5,510.111a3.854,3.854,0,0,0-4.867-2.449L69.1,539.581a3.864,3.864,0,0,0-2.448,4.882l4.838,14.661a3.864,3.864,0,0,0,4.882,2.448l37.272-12.331,17.537,53.01L93.9,614.582a3.86,3.86,0,0,0-2.463,4.882l4.853,14.661a3.864,3.864,0,0,0,4.882,2.448l105.062-34.75a3.865,3.865,0,0,0,1.932-1.416L310.518,457.971a3.824,3.824,0,0,0,.531-3.466l-31.358-94.825A3.867,3.867,0,0,0,277.2,357.2m206.053-26.107,166.538-55.075a3.827,3.827,0,0,0,1.917-1.416l64.589-89.87a3.866,3.866,0,0,0-.885-5.384l-12.537-9.012a3.853,3.853,0,0,0-5.384.885L674.569,203.1l-45.341-32.582,22.906-31.874a3.85,3.85,0,0,0-.87-5.384l-12.537-9.012a3.838,3.838,0,0,0-5.384.885l-59.338,82.554a3.867,3.867,0,0,0,.87,5.4l12.552,9.012a3.866,3.866,0,0,0,5.384-.885l22.906-31.874,45.34,32.582L636.559,256,485.316,306.02,420.167,259.2l-.826-159.3,24.5-34.086L489.18,98.4l-22.906,31.874a3.853,3.853,0,0,0,.885,5.384l12.537,9.012a3.853,3.853,0,0,0,5.384-.885L544.418,61.22a3.853,3.853,0,0,0-.885-5.384L531,46.824a3.866,3.866,0,0,0-5.384.885L502.691,79.583,457.365,47.016l22.906-31.889a3.866,3.866,0,0,0-.885-5.384L466.849.732a3.837,3.837,0,0,0-5.384.885l-64.589,89.87a3.923,3.923,0,0,0-.723,2.271l.914,175.4a3.837,3.837,0,0,0,1.608,3.112l81.108,58.291a3.869,3.869,0,0,0,3.466.531m280.42,23.127,4.69-14.72a3.864,3.864,0,0,0-2.508-4.853L660.438,301a3.888,3.888,0,0,0-2.389.015L491.511,356.095a3.814,3.814,0,0,0-2.463,2.493l-30.37,95.15a3.84,3.84,0,0,0,.56,3.451L563.076,598.564a3.938,3.938,0,0,0,1.947,1.387L670.439,633.61a3.858,3.858,0,0,0,4.852-2.508l4.69-14.705a3.832,3.832,0,0,0-2.493-4.853L640.084,599.6l16.977-53.187,37.405,11.933a3.868,3.868,0,0,0,4.852-2.493l4.691-14.72a3.864,3.864,0,0,0-2.508-4.853l-96.861-30.915a3.843,3.843,0,0,0-4.838,2.508l-4.7,14.72a3.842,3.842,0,0,0,2.507,4.838L635,539.374l-16.962,53.187-40-12.758-94.309-128.4,24.4-76.418,151.243-50.016,39.986,12.773-16.962,53.187-37.405-11.947a3.882,3.882,0,0,0-4.853,2.507l-4.69,14.72a3.848,3.848,0,0,0,2.507,4.838l96.846,30.915a3.862,3.862,0,0,0,4.853-2.493l4.705-14.72a3.876,3.876,0,0,0-2.507-4.853l-37.405-11.932,16.977-53.187,37.405,11.947a3.882,3.882,0,0,0,4.853-2.508m-474.717-22.8,80.415-59.235a3.885,3.885,0,0,0,1.578-3.142l-1.165-175.4a3.8,3.8,0,0,0-.752-2.257L303.394,2.28a3.848,3.848,0,0,0-5.4-.826l-12.434,9.16a3.863,3.863,0,0,0-.811,5.4l23.29,31.608L263.083,80.734l-23.29-31.608a3.859,3.859,0,0,0-5.4-.811l-12.434,9.16a3.859,3.859,0,0,0-.811,5.4l60.3,81.861a3.863,3.863,0,0,0,5.4.811l12.434-9.16a3.863,3.863,0,0,0,.826-5.4l-23.29-31.608,44.957-33.113,24.9,33.806,1.047,159.3-64.589,47.568L131.309,258.718l-24.9-33.806L151.369,191.8l23.275,31.608a3.863,3.863,0,0,0,5.4.811l12.434-9.16a3.874,3.874,0,0,0,.826-5.4l-60.311-81.846a3.852,3.852,0,0,0-5.4-.826l-12.434,9.16a3.861,3.861,0,0,0-.811,5.4l23.275,31.609L92.68,206.268,69.39,174.659a3.865,3.865,0,0,0-5.4-.826l-12.434,9.16a3.863,3.863,0,0,0-.811,5.4l65.636,89.1a3.786,3.786,0,0,0,1.932,1.387l167.173,53.113a3.876,3.876,0,0,0,3.466-.575"
-          transform="translate(-428.458 112.608) rotate(-51)"
-        />
-      </g>
-    </svg>
-  );
-};
+	const [grandImage, setGrandImage] = React.useState<boolean>(false)
+	const [hoverCard, setHoverCard] = React.useState<number | null>(null)
+
+	return (
+		<svg
+			width="100%"
+			height={height}
+			viewBox="0 30 1920 1080"
+			preserveAspectRatio="none">
+			<defs>
+				<style>
+					{
+						'.a-item-1802,.f-item-1802{fill:#fff;}.a-item-1802{stroke:#707070;}.b-item-1802,.c-item-1802{fill:none;stroke-miterlimit:10;stroke-width:3.044px;}.b-item-1802{stroke:#001f5f;}.c-item-1802{stroke:#e40032;}.d-item-1802{clip-path:url(#a-item-1802);}.e-item-1802{fill:#e40032;}.g-item-1802,.m-item-1802{fill:#001f5f;}.g-item-1802{font-size:100px;}.g-item-1802,.i-item-1802,.l-item-1802,.m-item-1802{font-family:Silka-SemiBold, Silka;font-weight:600;}.h-item-1802,.j-item-1802,.l-item-1802{fill:#182856;}.h-item-1802{font-size:23px;opacity:0;}.h-item-1802,.j-item-1802{font-family:Silka-Regular, Silka;}.j-item-1802{font-size:32px;}.k-item-1802{font-family:Silka-Bold, Silka;font-weight:700;}.l-item-1802{font-size:24px;}.m-item-1802{font-size:70px;}.n-item-1802{filter:url(#h-item-1802);}.o-item-1802{filter:url(#f-item-1802);}.p-item-1802{filter:url(#d-item-1802);}.q-item-1802{filter:url(#b-item-1802);}'
+					}
+				</style>
+				<style>
+					{
+						'.a-item-1812{fill:none;}.b-item-1812{clip-path:url(#a-item-1812);}.c-item-1812{fill:url(#b-item-1812);}'
+					}
+				</style>
+				<style>
+					{
+						'.a-item-1813{fill:#001f5f;}.b-item-1813{fill:none;}.c-item-1813{clip-path:url(#a-item-1813);}.d-item-1813{clip-path:url(#b-item-1813);}.e-item-1813{fill:url(#c-item-1813);}'
+					}
+				</style>
+				<clipPath id="a-item-1802">
+					<rect
+						className="a-item-1802"
+						width={718.679}
+						height={651.976}
+					/>
+				</clipPath>
+				<filter
+					id="b-item-1802"
+					x={186.459}
+					y={608.671}
+					width={361.393}
+					height={282.278}
+					filterUnits="userSpaceOnUse">
+					<feOffset dy={3} />
+					<feGaussianBlur stdDeviation={3} result="c" />
+					<feFlood floodOpacity={0.4} />
+					<feComposite operator="in" in2="c" />
+					<feComposite in="SourceGraphic" />
+				</filter>
+				<filter
+					id="d-item-1802"
+					x={582.459}
+					y={721.296}
+					width={361.393}
+					height={282.278}
+					filterUnits="userSpaceOnUse">
+					<feOffset dy={3} />
+					<feGaussianBlur stdDeviation={3} result="e" />
+					<feFlood floodOpacity={0.4} />
+					<feComposite operator="in" in2="e" />
+					<feComposite in="SourceGraphic" />
+				</filter>
+				<filter
+					id="f-item-1802"
+					x={979.459}
+					y={606.296}
+					width={361.393}
+					height={282.278}
+					filterUnits="userSpaceOnUse">
+					<feOffset dy={3} />
+					<feGaussianBlur stdDeviation={3} result="g" />
+					<feFlood floodOpacity={0.4} />
+					<feComposite operator="in" in2="g" />
+					<feComposite in="SourceGraphic" />
+				</filter>
+				<filter
+					id="h-item-1802"
+					x={1375.459}
+					y={706.296}
+					width={361.393}
+					height={282.278}
+					filterUnits="userSpaceOnUse">
+					<feOffset dy={3} />
+					<feGaussianBlur stdDeviation={3} result="i" />
+					<feFlood floodOpacity={0.4} />
+					<feComposite operator="in" in2="i" />
+					<feComposite in="SourceGraphic" />
+				</filter>
+
+				<clipPath id="a-item-1812">
+					<rect
+						className="a-item-1812"
+						width={420}
+						height={191.862}
+					/>
+				</clipPath>
+				<pattern
+					id="b-item-1812"
+					width={1}
+					height={1}
+					viewBox="0 24.157 420 191.862">
+					<image
+						preserveAspectRatio="xMidYMid slice"
+						width={420}
+						height={279.837}
+						xlinkHref="/images/servicios_2.webp"
+					/>
+				</pattern>
+				<clipPath id="a-item-1812">
+					<rect
+						className="a-item-1812"
+						width={765.574}
+						height={481.598}
+					/>
+				</clipPath>
+				<clipPath id="b-item-1812">
+					<rect
+						className="b-item-1812"
+						width={757.124}
+						height={488.355}
+					/>
+				</clipPath>
+				<pattern
+					id="c-item-1812"
+					width={1}
+					height={1}
+					viewBox="0 -27.698 757.124 488.355">
+					<image
+						preserveAspectRatio="xMidYMid slice"
+						width={757.124}
+						height={504.456}
+						xlinkHref="/images/servicios_2.webp"
+					/>
+				</pattern>
+				<clipPath id="a-item-1813">
+					<rect
+						className="a-item-1813"
+						width={765.574}
+						height={481.598}
+					/>
+				</clipPath>
+				<clipPath id="b-item-1813">
+					<rect
+						className="b-item-1813"
+						width={757.124}
+						height={488.355}
+					/>
+				</clipPath>
+				<pattern
+					id="c-item-1813"
+					width={1}
+					height={1}
+					viewBox="0 -27.698 757.124 488.355">
+					<image
+						preserveAspectRatio="xMidYMid slice"
+						width={757.124}
+						height={504.456}
+						xlinkHref="/images/servicios_2.webp"
+					/>
+				</pattern>
+			</defs>
+			<g transform="translate(1.459 0.531)">
+				{grandImage ? (
+					<React.Fragment>
+						<g transform='translate(0 -39)' onClick={() => setGrandImage(false)}>
+							<g
+								transform="translate(0 17.322)"
+								>
+								<g className="c-item-1813">
+									<path
+										className="a-item-1813"
+										d="M499.371,481.6H0V0H765.574L667.443,326.841C639.32,420.508,572.973,481.6,499.371,481.6"
+									/>
+								</g>
+							</g>
+							<g className="d-item-1813">
+								<path
+									className="e-item-1813"
+									d="M493.859,488.355H0V0H757.124L660.076,331.427c-27.812,94.981-93.426,156.928-166.217,156.928"
+								/>
+							</g>
+						</g>
+					</React.Fragment>
+				) : (
+					<g
+						className="b-item-1812"
+						onClick={() => setGrandImage(true)}>
+						<path
+							className="c-item-1812"
+							d="M273.959,191.862H0V0H420L366.164,130.209a99.776,99.776,0,0,1-92.206,61.653"
+						/>
+					</g>
+				)}
+				<path
+					className="b-item-1802"
+					d="M1239.687,1052.676h-295.9c-51.516,0-97.979,9.733-117.8,24.675l-90.678,68.37"
+					transform="translate(680.314 -38.03)"
+				/>
+				<path
+					className="b-item-1802"
+					d="M1930.082,812.332h497.363c71.706,0,136.381-48.228,163.966-122.268l126.216-338.779"
+					transform="translate(-1930.082 -351.285)"
+				/>
+				<path
+					className="c-item-1802"
+					d="M0,0H231.748c40.347,0,76.738,34.049,92.259,86.321l26.777,90.2L420,409.664"
+					transform="translate(420 986.818) rotate(180)"
+				/>
+				<path
+					className="c-item-1802"
+					d="M0,0H254.985c44.393,0,84.432,10.046,101.51,25.47l29.462,26.613,76.156,68.791"
+					transform="translate(249 986.818)"
+				/>
+				<g
+					className="d-item-1802"
+					transform="translate(1920 1.583) rotate(90)">
+					<path
+						className="e-item-1802"
+						d="M350.434,379.534l83.38,113.207a3.205,3.205,0,0,1,.6,1.81L436,582.362a2.976,2.976,0,0,1-3,3.039l-12.186-.1a3.146,3.146,0,0,1-3.1-3.082l-.559-31.143-44.053-.341.559,31.155a2.961,2.961,0,0,1-3,3.039l-12.186-.1a3.128,3.128,0,0,1-3.088-3.082l-1.445-80.672a2.952,2.952,0,0,1,2.987-3.039l12.186.086a3.165,3.165,0,0,1,3.1,3.093l.559,31.143,44.053.341-.6-33.32L340.526,396.572l-63.3-.482L205.175,497.8l.586,33.308,44.064.329-.559-31.143a2.952,2.952,0,0,1,2.987-3.039l12.186.086a3.149,3.149,0,0,1,3.1,3.094l1.445,80.672A2.966,2.966,0,0,1,266,584.143l-12.186-.1a3.146,3.146,0,0,1-3.1-3.082l-.559-31.155L206.1,549.48l.559,31.155a2.976,2.976,0,0,1-3,3.039l-12.186-.1a3.154,3.154,0,0,1-3.1-3.082l-1.57-87.811a3.007,3.007,0,0,1,.547-1.795L266.693,378.9a2.984,2.984,0,0,1,2.44-1.244l78.817.6a3.11,3.11,0,0,1,2.484,1.284M222.351,286.209l-132.4-43.991a2.934,2.934,0,0,0-1.874-.012l-82.569,26.5a3,3,0,0,0-1.883,3.849l3.966,11.681a3.117,3.117,0,0,0,3.877,1.992l29.277-9.4,14.374,42.237-29.289,9.4a3,3,0,0,0-1.883,3.849l3.966,11.681a3.132,3.132,0,0,0,3.877,1.992l75.858-24.351a2.986,2.986,0,0,0,1.883-3.849L105.564,306.1a3.132,3.132,0,0,0-3.877-1.992L72.4,313.52,58.036,271.284l31.317-10.06L209.6,301.186l10.16,29.873,10.477,30.8L158.19,463.569l-31.329,10.048L112.5,431.381l29.289-9.4a3,3,0,0,0,1.883-3.849l-3.977-11.681a3.114,3.114,0,0,0-3.866-1.992L59.969,428.814a3,3,0,0,0-1.883,3.849l3.966,11.682a3.122,3.122,0,0,0,3.877,1.992l29.289-9.408,14.374,42.237L80.3,488.572a2.992,2.992,0,0,0-1.895,3.849L82.386,504.1a3.122,3.122,0,0,0,3.877,1.992l82.558-26.512a2.945,2.945,0,0,0,1.51-1.1L249.661,366.5a3.017,3.017,0,0,0,.384-2.745l-25.7-75.553a3.17,3.17,0,0,0-1.992-1.991m162.34-18.635,130.866-42.018a2.916,2.916,0,0,0,1.5-1.1L567.118,153.8a3.109,3.109,0,0,0-.753-4.28l-9.984-7.277a3,3,0,0,0-4.24.648l-17.766,25.058-36.109-26.309,17.755-25.059a3.1,3.1,0,0,0-.741-4.28l-9.984-7.277a2.989,2.989,0,0,0-4.24.648l-45.993,64.9a3.11,3.11,0,0,0,.741,4.292l10,7.277a3.011,3.011,0,0,0,4.24-.648L487.8,156.435,523.9,182.743l-18.989,26.8L386.068,247.7l-51.884-37.8L331.925,83.5l18.989-26.8,36.108,26.309-17.755,25.059a3.1,3.1,0,0,0,.753,4.28l9.984,7.277a3,3,0,0,0,4.239-.648l45.993-64.913a3.1,3.1,0,0,0-.753-4.28L419.5,42.508a3.011,3.011,0,0,0-4.24.648L397.495,68.214l-36.1-26.3,17.754-25.07a3.109,3.109,0,0,0-.753-4.28L368.415,5.29a2.989,2.989,0,0,0-4.239.648L314.113,76.591a3.059,3.059,0,0,0-.547,1.795l2.491,139.178a3.139,3.139,0,0,0,1.3,2.485l64.593,47.067a3.073,3.073,0,0,0,2.741.456m221.523,21.179,3.553-11.632a3.148,3.148,0,0,0-2.028-3.876l-83.527-27.757a3.052,3.052,0,0,0-1.885-.012L391.461,287.493a2.913,2.913,0,0,0-1.919,1.953l-23.006,75.188a3.1,3.1,0,0,0,.477,2.744L450.382,480.6a3.219,3.219,0,0,0,1.551,1.12l83.527,27.769a2.967,2.967,0,0,0,3.8-1.941l3.553-11.62a3.121,3.121,0,0,0-2.016-3.875l-29.638-9.857,12.861-42.029,29.638,9.845a2.974,2.974,0,0,0,3.8-1.929l3.553-11.632a3.148,3.148,0,0,0-2.028-3.875l-76.748-25.506a2.954,2.954,0,0,0-3.793,1.941l-3.564,11.632a3.13,3.13,0,0,0,2.027,3.864l29.627,9.856L493.69,476.387,462,465.861,386.277,363.037l18.481-60.386L523.6,264.493l31.683,10.538L542.439,317.06,512.8,307.2a2.984,2.984,0,0,0-3.8,1.941l-3.553,11.632a3.135,3.135,0,0,0,2.027,3.864l76.737,25.506a2.969,2.969,0,0,0,3.8-1.929l3.564-11.632a3.157,3.157,0,0,0-2.028-3.875l-29.638-9.845,12.861-42.029,29.638,9.857a2.984,2.984,0,0,0,3.8-1.941M231.367,265.871l62.861-46.187a3,3,0,0,0,1.214-2.477L292.753,78.026a3.1,3.1,0,0,0-.616-1.8L239.442,4.87a3.055,3.055,0,0,0-4.268-.71l-9.72,7.142a3.049,3.049,0,0,0-.586,4.275l18.7,25.314L208.423,66.71,189.725,41.4a3.063,3.063,0,0,0-4.268-.7l-9.72,7.142a3.045,3.045,0,0,0-.586,4.275l48.408,65.558a3.066,3.066,0,0,0,4.268.7l9.72-7.142a3.049,3.049,0,0,0,.6-4.275l-18.7-25.314L254.59,55.822,274.579,82.9l2.433,126.4-50.49,37.09L106.231,206.6,86.243,179.524,121.386,153.7l18.686,25.314a3.066,3.066,0,0,0,4.268.7l9.72-7.142a3.057,3.057,0,0,0,.6-4.275l-48.42-65.547a3.058,3.058,0,0,0-4.268-.71l-9.72,7.142a3.047,3.047,0,0,0-.586,4.275l18.686,25.314L75.218,164.593l-18.7-25.314a3.068,3.068,0,0,0-4.268-.71l-9.72,7.142a3.049,3.049,0,0,0-.586,4.275l52.695,71.358a3.1,3.1,0,0,0,1.539,1.12l132.458,43.828a3.011,3.011,0,0,0,2.729-.421"
+						transform="translate(-328.443 166.967) rotate(-51)"
+					/>
+				</g>
+				{hoverCard === 1 ? (
+					<Slider2Card1 onMouseLeave={() => setHoverCard(null)} />
+				) : (
+					<g
+						transform="translate(194 614.14)"
+						onMouseOver={() => setHoverCard(1)}>
+						<g
+							className="q-item-1802"
+							transform="matrix(1, 0, 0, 1, -195.46, -614.67)">
+							<path
+								className="f-item-1802"
+								d="M328.424,264.278H14.97c-9.014,0-15.984-8.131-14.848-17.324L32.93,13.447A15.115,15.115,0,0,1,47.777,0H294.6a15.114,15.114,0,0,1,14.841,13.388l33.825,233.507c1.174,9.212-5.8,17.383-14.84,17.383"
+								transform="translate(195.46 614.67)"
+							/>
+						</g>
+						<text
+							className="g-item-1802"
+							transform="translate(37.018 75.278)">
+							<tspan x={45.55} y={94}>
+								{'71%'}
+							</tspan>
+						</text>
+						<text
+							className="h-item-1802"
+							transform="translate(82.696 137.278)">
+							<tspan x={9.659} y={22}>
+								{'Experiencia de'}
+							</tspan>
+							<tspan className="i-item-1802" y={22} />
+							<tspan className="i-item-1802" x={41.756} y={47}>
+								{'servicios '}
+							</tspan>
+							<tspan className="i-item-1802" x={4.484} y={72}>
+								{'administrativos'}
+							</tspan>
+						</text>
+					</g>
+				)}
+				<text
+					className="j-item-1802"
+					transform="translate(420 502.043)">
+					<tspan x={80.416} y={30}>
+						{'Resultados medición de'}
+					</tspan>
+					<tspan className="k-item-1802" y={30} xmlSpace="preserve">
+						{' experiencia y lealtad (NPS) 2023:'}
+					</tspan>
+					<tspan y={30} />
+				</text>
+				<text
+					className="l-item-1802"
+					transform="translate(798 1020.043)">
+					<tspan x={20.92} y={23}>
+						{'NPS: Net Promoter Score '}
+					</tspan>
+				</text>
+				<text
+					className="m-item-1802"
+					transform="translate(698 326.669)">
+					<tspan x={0} y={66}>
+						{'LO QUE OPINAN '}
+					</tspan>
+					<tspan x={0} y={138}>
+						{'NUESTROS CLIENTES'}
+					</tspan>
+				</text>
+				{hoverCard === 2 ? (
+					<Slider2Card2 onMouseLeave={() => setHoverCard(null)} />
+				) : (
+					<g
+						transform="translate(590 726.765)"
+						onMouseOver={() => setHoverCard(2)}>
+						<g
+							className="p-item-1802"
+							transform="matrix(1, 0, 0, 1, -591.46, -727.3)">
+							<path
+								className="f-item-1802"
+								d="M328.424,264.278H14.97c-9.014,0-15.984-8.131-14.848-17.324L32.93,13.447A15.115,15.115,0,0,1,47.777,0H294.6a15.114,15.114,0,0,1,14.841,13.388l33.825,233.507c1.174,9.212-5.8,17.383-14.84,17.383"
+								transform="translate(591.46 727.3)"
+							/>
+						</g>
+						<text
+							className="g-item-1802"
+							transform="translate(37.018 75.278)">
+							<tspan x={36.55} y={94}>
+								{'83%'}
+							</tspan>
+						</text>
+						<text
+							className="h-item-1802"
+							transform="translate(82.696 137.278)">
+							<tspan x={9.659} y={22}>
+								{'Experiencia de'}
+							</tspan>
+							<tspan className="i-item-1802" y={22} />
+							<tspan className="i-item-1802" x={41.756} y={47}>
+								{'servicios '}
+							</tspan>
+							<tspan className="i-item-1802" x={4.484} y={72}>
+								{'administrativos'}
+							</tspan>
+						</text>
+					</g>
+				)}
+				{hoverCard === 3 ? (
+					<Slider2Card3 onMouseLeave={() => setHoverCard(null)} />
+				) : (
+					<g
+						transform="translate(987 611.765)"
+						onMouseOver={() => setHoverCard(3)}>
+						<g
+							className="o-item-1802"
+							transform="matrix(1, 0, 0, 1, -988.46, -612.3)">
+							<path
+								className="f-item-1802"
+								d="M328.424,264.278H14.97c-9.014,0-15.984-8.131-14.848-17.324L32.93,13.447A15.115,15.115,0,0,1,47.777,0H294.6a15.114,15.114,0,0,1,14.841,13.388l33.825,233.507c1.174,9.212-5.8,17.383-14.84,17.383"
+								transform="translate(988.46 612.3)"
+							/>
+						</g>
+						<text
+							className="g-item-1802"
+							transform="translate(37.018 75.278)">
+							<tspan x={43.75} y={94}>
+								{'91%'}
+							</tspan>
+						</text>
+						<text
+							className="h-item-1802"
+							transform="translate(82.696 137.278)">
+							<tspan x={9.659} y={22}>
+								{'Experiencia de'}
+							</tspan>
+							<tspan className="i-item-1802" y={22} />
+							<tspan className="i-item-1802" x={41.756} y={47}>
+								{'servicios '}
+							</tspan>
+							<tspan className="i-item-1802" x={4.484} y={72}>
+								{'administrativos'}
+							</tspan>
+						</text>
+					</g>
+				)}
+				{hoverCard === 4 ? (
+					<Slider2Card4 onMouseLeave={() => setHoverCard(null)} />
+				) : (
+					<g
+						transform="translate(1383 711.765)"
+						onMouseOver={() => setHoverCard(4)}>
+						<g
+							className="n-item-1802"
+							transform="matrix(1, 0, 0, 1, -1384.46, -712.3)">
+							<path
+								className="f-item-1802"
+								d="M328.424,264.278H14.97c-9.014,0-15.984-8.131-14.848-17.324L32.93,13.447A15.115,15.115,0,0,1,47.777,0H294.6a15.114,15.114,0,0,1,14.841,13.388l33.825,233.507c1.174,9.212-5.8,17.383-14.84,17.383"
+								transform="translate(1384.46 712.3)"
+							/>
+						</g>
+						<text
+							className="g-item-1802"
+							transform="translate(37.018 75.278)"
+							onMouseOver={() => setHoverCard(4)}>
+							<tspan x={36.9} y={94}>
+								{'85%'}
+							</tspan>
+						</text>
+						<text
+							className="h-item-1802"
+							transform="translate(82.696 137.278)"
+							onMouseOver={() => setHoverCard(4)}>
+							<tspan x={9.659} y={22}>
+								{'Experiencia de'}
+							</tspan>
+							<tspan className="i-item-1802" y={22} />
+							<tspan className="i-item-1802" x={41.756} y={47}>
+								{'servicios '}
+							</tspan>
+							<tspan className="i-item-1802" x={4.484} y={72}>
+								{'administrativos'}
+							</tspan>
+						</text>
+					</g>
+				)}
+			</g>
+		</svg>
+	)
+}
