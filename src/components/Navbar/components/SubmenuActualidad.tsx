@@ -86,7 +86,7 @@ const SubmenuActualidad = () => {
 						preserveAspectRatio="xMidYMid slice"
 						width={674.352}
 						height={341.444}
-						xlinkHref="public/images/navbar/act-1.jpg"
+						xlinkHref="/images/navbar/act-1.jpg"
 					/>
 				</pattern>
 			</defs>
@@ -166,11 +166,13 @@ const SubmenuActualidad = () => {
 					d="M692.66,0,626.268,206.606h607.96L1300.62,0Z"
 					transform="translate(511.48 103.094)"
 				/>
-				<path
+			<a href="/eventos">
+			<path
 					className="j-submenu-p"
 					d="M692.66,0,626.268,206.606h607.96L1300.62,0Z"
 					transform="translate(511.48 103.094)"
 				/>
+			</a>
 				<text className="k-submenu-p" transform="translate(1316 265)">
 					<tspan x={79.776} y={24}>
 						{'eVENTOS'}

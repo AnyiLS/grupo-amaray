@@ -674,7 +674,7 @@ const May04: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay }) =
 					{'Trasplante De Órganos'}
 				</tspan>
 			</text>
-			<text className="s-item-1813" transform="translate(1575 401.019)">
+			<text className="s-item-1813" transform="translate(1575	 401.019)">
 				<tspan x={-313.254} y={17}>
 					{'Cali 2 y 4 de mayo Intercontinental'}
 				</tspan>

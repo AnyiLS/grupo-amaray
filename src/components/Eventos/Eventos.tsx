@@ -6,7 +6,7 @@ const Eventos = () => {
 	const month = moment().month()
 	const day = moment().date()
 
-	const [slide, setSlide] = React.useState<number>(18);
+	const [slide, setSlide] = React.useState<number>(0);
 
 	const handleAddPage = (): void => setSlide((slide + 1) > 18 ? 0 : slide + 1);
 

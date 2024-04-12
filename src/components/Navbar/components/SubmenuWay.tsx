@@ -149,8 +149,8 @@ const SubmenuWay: React.FC = (): JSX.Element => {
 					d="M367.709,339.246H0V0H586.714l-62.14,206.671a173.939,173.939,0,0,1-15.633,36.562c-36.385,63.36-89.124,96.013-141.232,96.013"
 					transform="translate(0 0.129)"
 				/>
-				<a href="/historia">
 				<g transform="translate(0 -103.871)">
+					<a href="/historia">
 					<path
 						className="f-way-submenu"
 						d="M68.406,0,0,197.973H317.907L386.312,0Z"
@@ -168,16 +168,21 @@ const SubmenuWay: React.FC = (): JSX.Element => {
 							{'Nuestra Historia'}
 						</tspan>
 					</text>
+					</a>
+					
+
 					<path
 						className="i-way-submenu"
 						d="M396.733,0,328.326,197.973H646.233L714.64,0Z"
 						transform="translate(524.455 103.871)"
 					/>
+					<a href="/filosofia">
 					<path
 						className="g-way-submenu"
 						d="M396.733,0,328.326,197.973H646.233L714.64,0Z"
 						transform="translate(524.455 103.871)"
 					/>
+					</a>
 					<text
 						className="h-way-submenu"
 						transform="translate(886 268)">
@@ -185,6 +190,7 @@ const SubmenuWay: React.FC = (): JSX.Element => {
 							{'Filosof\xEDa'}
 						</tspan>
 					</text>
+					<a href="/reconocimientos">
 					<path
 						className="j-way-submenu"
 						d="M725.059,0,656.652,197.973H974.56L1042.966,0Z"
@@ -202,6 +208,8 @@ const SubmenuWay: React.FC = (): JSX.Element => {
 							{'rECONOCIMIENTOS'}
 						</tspan>
 					</text>
+					</a>
+					<a href="/responsabilidad">
 					<path
 						className="k-way-submenu"
 						d="M1053.385,0,984.98,197.973h317.907L1371.292,0Z"
@@ -219,6 +227,7 @@ const SubmenuWay: React.FC = (): JSX.Element => {
 							{'rse'}
 						</tspan>
 					</text>
+					</a>
 					<g
 						className="p-way-submenu"
 						transform="matrix(1, 0, 0, 1, -9, 98)">
@@ -245,7 +254,6 @@ const SubmenuWay: React.FC = (): JSX.Element => {
 						</tspan>
 					</text>
 				</g>
-				</a>
 			</g>
 		</svg>
 	)

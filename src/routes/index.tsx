@@ -8,6 +8,7 @@ import Reconocimientos from 'components/Reconocimientos/Reconocimientos'
 import Responsabilidad from 'components/Responsabilidad/Responsabilidad'
 import Biomedico from 'components/Biomedico/Biomedico'
 import Eventos from 'components/Eventos/Eventos'
+import Filosofia from 'components/Filosofia/Filosofia'
 
 const useRouter = () => {
 	const {
@@ -67,6 +68,10 @@ const useRouter = () => {
 		{
 			path: 'eventos',
 			element: <Eventos />,
+		},
+		{
+			path: 'filosofia',
+			element: <Filosofia />,
 		},
 		{
 			path: 'productos',

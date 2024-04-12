@@ -180,6 +180,7 @@ const SubmenuSolution: React.FC = (): JSX.Element => {
 						{'Nuestros ALIADOS'}
 					</tspan>
 				</text>
+				<a href="/biomedico">
 				<path
 					className="l-solution"
 					d="M496.655,0,433.822,200.9h416.7L913.352,0Z"
@@ -195,6 +196,7 @@ const SubmenuSolution: React.FC = (): JSX.Element => {
 						{'Mantenimiento Biom\xE9dico'}
 					</tspan>
 				</text>
+				</a>
 				<path
 					className="n-solution"
 					d="M930.478,0,867.646,200.9h416.7L1347.174,0V0Z"

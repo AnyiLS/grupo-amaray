@@ -105,7 +105,7 @@ const Portafolio: React.FC = () => {
 							<image
 								preserveAspectRatio="xMidYMid slice"
 								width={1544.558}
-          						height={1027.662}
+								height={1027.662}
 								xlinkHref="/images/maquinas.png "
 							/>
 						</pattern>
@@ -184,7 +184,9 @@ const Portafolio: React.FC = () => {
 							</tspan>
 						</text>
 					</g>
-					<g transform='translate(1164 779)' onClick={() => setOpenState(true)}>
+					<g
+						transform="translate(1164 779)"
+						onClick={() => setOpenState(true)}>
 						<defs>
 							<style>
 								{
@@ -376,11 +378,11 @@ const Portafolio: React.FC = () => {
 							width={1}
 							height={1}
 							patternTransform="translate(0 1026.314) rotate(-180)"
-							viewBox="0 0 306 342">
+							viewBox="101.554 6.532 241.811 269.735">
 							<image
 								preserveAspectRatio="xMidYMid slice"
-								width={306.965}
-								height={460.448}
+								width={429.685}
+								height={286.423}
 								xlinkHref={
 									items.length > 0 ? items[1].images : ''
 								}
