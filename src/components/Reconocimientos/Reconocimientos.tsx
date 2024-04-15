@@ -29,8 +29,15 @@ import Reward27 from './components/Reward27'
 import Reward28 from './components/Reward28'
 import Reward29 from './components/Reward29'
 import Reward30 from './components/Reward30'
+import { mocksRewards } from './mocks/Rewards.mocks'
 
 const Reconocimientos: React.FC = (): JSX.Element => {
+	const [slide, setSlide] = React.useState<number>(0);
+
+	const handleLessSlide = () => setSlide((slide - 1) < 0 ? 3 : slide - 1)
+
+	const handleAddSlide = () => setSlide((slide + 1) > 3 ? 0 : slide + 1)
+
 	return (
 		<div>
 			<svg
@@ -172,175 +179,19 @@ const Reconocimientos: React.FC = (): JSX.Element => {
 					transform="translate(-421.16 -450.164)"
 				/>
 				<g transform="translate(0 -100.875)">
-					<g transform="translate(249 387.497)">
-						<g transform="translate(417.984)">
-							<g
-								className="t-lin"
-								transform="matrix(1, 0, 0, 1, -666.98, -286.62)">
-								<path
-									className="d-lin"
-									d="M950.161,399.65H415.308c-15.383,0-27.273-16.7-25.336-35.578L445.951,27.615C447.572,11.832,458.427,0,471.287,0H892.443c12.823,0,23.658,11.764,25.323,27.494l57.718,336.457c2,18.918-9.9,35.7-25.323,35.7"
-									transform="translate(277.22 286.62)"
-								/>
-							</g>
-							<path
-								className="e-lin"
-								d="M950.161,399.65H415.308c-15.383,0-27.273-16.7-25.336-35.578L445.951,27.615C447.572,11.832,458.427,0,471.287,0H892.443c12.823,0,23.658,11.764,25.323,27.494l57.718,336.457c2,18.918-9.9,35.7-25.323,35.7"
-								transform="translate(-389.765)"
-							/>
-							<text
-								className="f-lin"
-								transform="translate(296.016 319.491)">
-								<tspan x={-151.212} y={23}>
-									{'Certificado Amarey Nova '}
-								</tspan>
-								<tspan x={-109.392} y={51}>
-									{'Medical ISO 90001'}
-								</tspan>
-							</text>
-						</g>
-						<g
-							className="g-lin"
-							transform="translate(1050.648 73.213)">
-							<g
-								className="s-lin"
-								transform="matrix(1, 0, 0, 1, -1299.65, -359.84)">
-								<path
-									className="d-lin"
-									d="M995.9,68.27H1334.79c9.746,0,17.281,10.581,16.053,22.543L1315.373,304c-1.027,10-7.9,17.5-16.053,17.5H1032.47c-8.126,0-14.99-7.453-16.045-17.42L979.854,90.89c-1.27-11.987,6.273-22.62,16.044-22.62"
-									transform="translate(319.93 291.57)"
-								/>
-							</g>
-							<path
-								className="h-lin"
-								d="M995.9,68.27H1334.79c9.746,0,17.281,10.581,16.053,22.543L1315.373,304c-1.027,10-7.9,17.5-16.053,17.5H1032.47c-8.126,0-14.99-7.453-16.045-17.42L979.854,90.89c-1.27-11.987,6.273-22.62,16.044-22.62"
-								transform="translate(-979.714 -68.27)"
-							/>
-							<text
-								className="i-lin"
-								transform="translate(184.352 191.278)">
-								<tspan x={-103.599} y={17}>
-									{'Certificado Ucipharma '}
-								</tspan>
-								<tspan x={-43.857} y={37}>
-									{'ISO 90001'}
-								</tspan>
-							</text>
-						</g>
-						<g className="g-lin" transform="translate(0 73.213)">
-							<g
-								className="r-lin"
-								transform="matrix(1, 0, 0, 1, -249, -359.84)">
-								<path
-									className="d-lin"
-									d="M16.185,68.27H355.076c9.746,0,17.281,10.581,16.053,22.543L335.659,304c-1.027,10-7.9,17.5-16.053,17.5H52.756c-8.126,0-14.99-7.453-16.045-17.42L.14,90.89C-1.129,78.9,6.413,68.27,16.185,68.27"
-									transform="translate(249 291.57)"
-								/>
-							</g>
-							<path
-								className="j-lin"
-								d="M16.185,68.27H355.076c9.746,0,17.281,10.581,16.053,22.543L335.659,304c-1.027,10-7.9,17.5-16.053,17.5H52.756c-8.126,0-14.99-7.453-16.045-17.42L.14,90.89C-1.129,78.9,6.413,68.27,16.185,68.27"
-								transform="translate(-0.001 -68.27)"
-							/>
-							<text
-								className="k-lin"
-								transform="translate(185 174.278)">
-								<tspan x={-121.014} y={11}>
-									{
-										'Certificaci\xF3n OEA (Operador Econ\xF3mico '
-									}
-								</tspan>
-								<tspan x={-123.582} y={26}>
-									{
-										'Autorizado) de la DIAN, obtenida en 2001, '
-									}
-								</tspan>
-								<tspan x={-128.052} y={41}>
-									{
-										'demostrando la seguridad en la cadena de '
-									}
-								</tspan>
-								<tspan x={-121.974} y={56}>
-									{
-										'suministro internacional de la compa\xF1\xEDa.'
-									}
-								</tspan>
-							</text>
-						</g>
-						<rect
-							className="l-lin"
-							width={107}
-							height={26}
-							rx={13}
-							transform="translate(449 449.491)"
-						/>
-						<rect
-							className="m-lin"
-							width={107}
-							height={26}
-							rx={13}
-							transform="translate(588 449.491)"
-						/>
-						<rect
-							className="m-lin"
-							width={107}
-							height={26}
-							rx={13}
-							transform="translate(727 449.491)"
-						/>
-						<rect
-							className="m-lin"
-							width={107}
-							height={26}
-							rx={13}
-							transform="translate(866 449.491)"
-						/>
-						<g transform="translate(225.047 379.387)">
-							<g
-								className="q-lin"
-								transform="matrix(1, 0, 0, 1, -474.05, -666.01)">
-								<path
-									className="l-lin"
-									d="M0,0H84.3a105.483,105.483,0,0,1,98.2,66.963l9.451,24.094H111.11A111.021,111.021,0,0,1,7.206,19.146Z"
-									transform="translate(474.05 666.01)"
-								/>
-							</g>
-							<path
-								className="d-lin"
-								d="M21,0,42,36H0Z"
-								transform="translate(78 66.499) rotate(-90)"
-							/>
-						</g>
-						<g transform="translate(1005 379.387)">
-							<g
-								className="p-lin"
-								transform="matrix(1, 0, 0, 1, -1254, -666.01)">
-								<path
-									className="l-lin"
-									d="M191.953,0h-84.3a105.483,105.483,0,0,0-98.2,66.963L0,91.057H80.843a111.021,111.021,0,0,0,103.9-71.911Z"
-									transform="translate(1254 666.01)"
-								/>
-							</g>
-							<path
-								className="d-lin"
-								d="M21,0,42,36H0Z"
-								transform="translate(113.953 24.499) rotate(90)"
-							/>
-						</g>
-					</g>
-					<text className="n-lin" transform="translate(474 295.988)">
-						<tspan x={329.76} y={38}>
-							{'Certificaciones'}
-						</tspan>
-					</text>
-				</g>
+						{mocksRewards.map((item, index) => (
+							<React.Fragment>
+								{index === slide && item.component(() => setSlide(index), handleLessSlide, handleAddSlide)}
+							</React.Fragment>
+						))}
+				</g> 
 				<text className="o-lin" transform="translate(474 84.125)">
 					<tspan x={154.515} y={70}>
 						{'RECONOCIMIENTOS'}
 					</tspan>
 				</text>
 			</svg>
-			<svg viewBox="470 850 1920 2647" preserveAspectRatio="none">
+			<svg viewBox="470 850 1920 2647" preserveAspectRatio="none" style={{ marginTop: '-11%' }}>
 				<defs>
 					<style>
 						{

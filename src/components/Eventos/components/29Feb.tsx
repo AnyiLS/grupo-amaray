@@ -8,9 +8,11 @@ export interface ICalendar {
 	month: number
 	prev: () => void
 	onChangeDay: (day: number) => void
+	onChangeMonth: () => void
+	onLessMonth: () => void
 }
 
-const Feb29: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay }) => {
+const Feb29: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onChangeMonth, onLessMonth }) => {
 	const currentMonth = moment('02').month() + 1
 	const events = Object.values(daysFeb).filter(
 		(item: any) => item.hasEvent === true
@@ -40,7 +42,7 @@ const Feb29: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay }) =
 					<image
 						width={1500}
 						height={841}
-						xlinkHref="ComponentTMP_0-image.jpg-item-1813"
+						xlinkHref="/images/eventos/29Feb.jpg"
 					/>
 				</pattern>
 				<filter
@@ -519,11 +521,13 @@ const Feb29: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay }) =
 					className="d-item-1813"
 					d="M13.947,0,27.893,23.908H0Z"
 					transform="translate(616.338 532.048) rotate(-90)"
+					onClick={onLessMonth}
 				/>
 				<path
 					className="d-item-1813"
 					d="M13.947,0,27.893,23.908H0Z"
 					transform="translate(698.246 504.155) rotate(90)"
+					onClick={onChangeMonth}
 				/>
 			</g>
 			<text className="k-item-1813" transform="translate(0 214.019)">
@@ -574,7 +578,7 @@ const Feb29: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay }) =
 				</text>
 			</g>
 			<g transform="translate(-210.89 -41.981)">
-				<g transform="translate(1440.747 906.884)">
+				<g transform="translate(1440.747 906.884)" onClick={next}>
 					<g
 						className="t-item-1813"
 						transform="matrix(1, 0, 0, 1, -1229.86, -864.9)">
@@ -590,7 +594,7 @@ const Feb29: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay }) =
 						transform="translate(75.679 16.27) rotate(90)"
 					/>
 				</g>
-				<g transform="translate(1224.426 906.884)">
+				<g transform="translate(1224.426 906.884)" onClick={prev}>
 					<g
 						className="s-item-1813"
 						transform="matrix(1, 0, 0, 1, -1013.54, -864.9)">

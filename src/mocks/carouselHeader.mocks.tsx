@@ -10,7 +10,7 @@ export interface CarouselHeaderItems {
 export const carouselHeaderItems: CarouselHeaderItems[] = [
     {
         slide: (height: string, onClick: (number: number) => void) => <Slide1 height={height} onClick={onClick}/>,
-        image: '/images/ComponentTMP_0-image.png'
+        image: '/images/slider1.jpg'
     },
     {
         slide: (height: string, onClick: (number: number) => void) => <Slide2 height={height} onClick={onClick}/>,
@@ -18,6 +18,6 @@ export const carouselHeaderItems: CarouselHeaderItems[] = [
     },
     {
         slide: (height: string, onClick: (number: number) => void) => <Slide3 height={height} onClick={onClick}/>,
-        image: '/images/carouselHeader/image_5.jpg'
+        image: '/images/slider3.jpg'
     }
 ]

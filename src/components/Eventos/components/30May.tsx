@@ -8,9 +8,11 @@ export interface ICalendar {
 	month: number
 	prev: () => void
 	onChangeDay: (day: number) => void
+	onChangeMonth: () => void
+	onLessMonth: () => void
 }
 
-const May30: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay }) => {
+const May30: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay, onChangeMonth, onLessMonth }) => {
 	const currentMonth = moment('02').month() + 1
 	const events = Object.values(daysFeb).filter(
 		(item: any) => item.hasEvent === true
@@ -66,7 +68,7 @@ const May30: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay }) =
 					<image
 						width={1500}
 						height={841}
-						xlinkHref="ComponentTMP_0-image.jpg-item-1813"
+						xlinkHref="/images/eventos/29Feb.jpg"
 					/>
 				</pattern>
 				<filter
@@ -649,11 +651,13 @@ const May30: React.FC<ICalendar> = ({ month, next, prev, today, onChangeDay }) =
 					className="c-item-1813"
 					d="M13.947,0,27.893,23.908H0Z"
 					transform="translate(616.338 532.048) rotate(-90)"
+					onClick={onLessMonth}
 				/>
 				<path
 					className="c-item-1813"
 					d="M13.947,0,27.893,23.908H0Z"
 					transform="translate(698.246 504.155) rotate(90)"
+					onClick={onChangeMonth}
 				/>
 			</g>
 			<g className="t-item-1813" transform="matrix(1, 0, 0, 1, 0, 0)">

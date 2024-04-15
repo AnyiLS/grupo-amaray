@@ -14,6 +14,9 @@ interface ISlide {
 
 const Slide4: React.FC<ISlide> = ({ height, image, onReturn }): JSX.Element => {
 	const [selected, setSelected] = React.useState<number>(0)
+
+	console.log(image)
+
 	return (
 		<svg
 			width="100%"
@@ -166,7 +169,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn }): JSX.Element => {
 						preserveAspectRatio="xMidYMid slice"
 						width={775.246}
 						height={516.831}
-						xlinkHref="ComponentTMP_0-image4.jpg"
+						xlinkHref={image}
 					/>
 				</pattern>
 				<filter
@@ -207,7 +210,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn }): JSX.Element => {
 					id="y-slide-5"
 					width={1}
 					height={1}
-					viewBox="223.853 0 662.303 514.533">
+					viewBox={`${image === '/images/carouselHeader/ComponentTMP_0-image4.png' ? '100 -100 662.303 514.533' : '223 0 662.303 514.533'}`}>
 					<image
 						preserveAspectRatio="xMidYMid slice"
 						width={771.8}
