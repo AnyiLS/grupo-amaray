@@ -3,6 +3,7 @@ import React from 'react'
 interface ISlider {
 	height: string
 	index: number
+	handleChangeSlide: (position: number) => void
 }
 
 export const Slider4: React.FC<ISlider> = ({ height, index }) => {

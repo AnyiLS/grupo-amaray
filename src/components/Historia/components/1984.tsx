@@ -2,9 +2,10 @@ import React from 'react'
 
 interface ILifeLine1984 {
     onClick: () => void
+	handleChangeStepForce: (index: number) => void
 }
 
-const LifeLine1984: React.FC<ILifeLine1984> = ({ onClick }): JSX.Element => {
+const LifeLine1984: React.FC<ILifeLine1984> = ({ onClick, handleChangeStepForce }): JSX.Element => {
 	return (
 		<svg viewBox="0 0 1920 834.49">
 			<defs>
@@ -281,7 +282,8 @@ const LifeLine1984: React.FC<ILifeLine1984> = ({ onClick }): JSX.Element => {
 						</g>
 						<text
 							className="o-lineat"
-							transform="translate(168.286 303.672)">
+							transform="translate(168.286 303.672)"
+							onClick={() => handleChangeStepForce(0)}>
 							<tspan x={0} y={0}>
 								{'1984'}
 							</tspan>
@@ -393,119 +395,120 @@ const LifeLine1984: React.FC<ILifeLine1984> = ({ onClick }): JSX.Element => {
 						/>
 						<text
 							className="q-lineat"
-							transform="translate(51.016 72.16)">
+							transform="translate(51.016 72.16)"
+							onClick={() => handleChangeStepForce(0)}>
 							<tspan x={0} y={0}>
 								{'1984'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(131.016 72.16)">
+							transform="translate(131.016 72.16)"  onClick={() => handleChangeStepForce(1)}>
 							<tspan x={0} y={0}>
 								{'1999'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(210.016 72.16)">
+							transform="translate(210.016 72.16)"  onClick={() => handleChangeStepForce(2)}>
 							<tspan x={0} y={0}>
 								{'2000'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(293.016 72.16)">
+							transform="translate(293.016 72.16)"  onClick={() => handleChangeStepForce(3)}>
 							<tspan x={0} y={0}>
 								{'2007'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(374.016 72.16)">
+							transform="translate(374.016 72.16)"  onClick={() => handleChangeStepForce(4)}>
 							<tspan x={0} y={0}>
 								{'2009'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(457.016 72.16)">
+							transform="translate(457.016 72.16)"  onClick={() => handleChangeStepForce(5)}>
 							<tspan x={0} y={0}>
 								{'2011'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(533.016 72.16)">
+							transform="translate(533.016 72.16)"  onClick={() => handleChangeStepForce(6)}>
 							<tspan x={0} y={0}>
 								{'2011'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(610.016 72.16)">
+							transform="translate(610.016 72.16)"  onClick={() => handleChangeStepForce(7)}>
 							<tspan x={0} y={0}>
 								{'2012'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(688.016 72.16)">
+							transform="translate(688.016 72.16)"  onClick={() => handleChangeStepForce(8)}>
 							<tspan x={0} y={0}>
 								{'2012'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(767.016 72.16)">
+							transform="translate(767.016 72.16)"  onClick={() => handleChangeStepForce(9)}>
 							<tspan x={0} y={0}>
 								{'2014'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(845.016 72.16)">
+							transform="translate(845.016 72.16)"  onClick={() => handleChangeStepForce(10)}>
 							<tspan x={0} y={0}>
 								{'2014'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(925.016 72.16)">
+							transform="translate(925.016 72.16)"  onClick={() => handleChangeStepForce(11)}>
 							<tspan x={0} y={0}>
 								{'2016'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(1002.016 72.16)">
+							transform="translate(1002.016 72.16)"  onClick={() => handleChangeStepForce(12)}>
 							<tspan x={0} y={0}>
 								{'2017'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(1081.016 72.16)">
+							transform="translate(1081.016 72.16)"  onClick={() => handleChangeStepForce(13)}>
 							<tspan x={0} y={0}>
 								{'2023'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(1159.016 72.16)">
+							transform="translate(1159.016 72.16)"  onClick={() => handleChangeStepForce(14)}>
 							<tspan x={0} y={0}>
 								{'2023'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(1238.016 72.16)">
+							transform="translate(1238.016 72.16)"  onClick={() => handleChangeStepForce(15)}>
 							<tspan x={0} y={0}>
 								{'2023'}
 							</tspan>
 						</text>
 						<text
 							className="q-lineat"
-							transform="translate(1316.016 72.16)">
+							transform="translate(1316.016 72.16)"  onClick={() => handleChangeStepForce(16)}>
 							<tspan x={0} y={0}>
 								{'2023'}
 							</tspan>

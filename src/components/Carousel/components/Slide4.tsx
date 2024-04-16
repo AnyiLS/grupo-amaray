@@ -507,7 +507,7 @@ const Slide4: React.FC<ISlide> = ({ height, image, onReturn }): JSX.Element => {
 							onClick={() => setSelected(4)}>
 							<rect
 								className="b-item-pen"
-								width={390}
+								width={402}
 								height={323}
 								transform="matrix(1, 0.017, -0.017, 1, 5.637, 0)"
 							/>

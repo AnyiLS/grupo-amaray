@@ -63,6 +63,7 @@ const DownLeftAsta: React.FC<{ onUnselected: () => void }> = ({
 						/>
 					</pattern>
 				</defs>
+				<a href='/filosofia'>
 				<g transform="translate(9)">
 					<image
 						width={239.064}
@@ -101,6 +102,7 @@ const DownLeftAsta: React.FC<{ onUnselected: () => void }> = ({
 						</text>
 					</g>
 				</g>
+				</a>
 			</g>
 		</React.Fragment>
 	)

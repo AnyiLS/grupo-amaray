@@ -19,7 +19,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 
 	return (
 		<div
-			className={`absolute top-0 bg-[#ffffff50] ${
+			className={`w-full absolute top-0 bg-[#ffffff50] ${
 				open ? 'block' : 'hidden'
 			}`}>
 			<svg
@@ -89,7 +89,7 @@ export const CifrasVideo: React.FC<IcifrasVideo> = ({
 						<feComposite in="SourceGraphic" />
 					</filter>
 				</defs>
-				<g className="b-cifras-1" transform="translate(-9 -6)">
+				<g className="b-cifras-1">
 					{/* <rect
             className="c-cifras-1"
             width={1920}

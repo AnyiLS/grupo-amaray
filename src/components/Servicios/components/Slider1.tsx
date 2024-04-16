@@ -1,8 +1,8 @@
 import React from 'react'
 
-interface ISlider {height : string, index: number}  
+interface ISlider {height : string, index: number, handleChangeSlide: (position: number) => void}  
 
-export const Slider1:React.FC<ISlider> = ({height}) => {
+export const Slider1:React.FC<ISlider> = ({height, handleChangeSlide}) => {
   return (
     <div>
       <svg width='100%' height={height} viewBox="0 0 1920 1080" preserveAspectRatio="none">
@@ -131,7 +131,7 @@ export const Slider1:React.FC<ISlider> = ({height}) => {
             }
           </tspan>
           <tspan x={0} y={79}>
-            {"certificarse con la norma ISO 13485 de ICONTEC. "}
+            certificarse con la norma ISO 13485 de ICONTEC.
           </tspan>
         </text>
         <g transform="translate(1190 690.232)" id="button">
@@ -142,9 +142,9 @@ export const Slider1:React.FC<ISlider> = ({height}) => {
               transform="translate(1190 690.23)"
             />
           </g>
-          <text className="k-3" transform="translate(71 51.424)">
+          <text className="k-3" transform="translate(71 51.424)" onClick={() => handleChangeSlide(1)}>
             <tspan x={0} y={0}>
-              {"Conoce M\xE1s"}
+              Conoce Más
             </tspan>
           </text>
           <path

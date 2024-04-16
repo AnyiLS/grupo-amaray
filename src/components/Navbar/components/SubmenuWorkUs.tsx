@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SubmenuWorkUs: React.FC = () => {
+const SubmenuWorkUs: React.FC<{ref: any}> = ({ ref }) => {
 	return (
-		<svg viewBox="0 0 1930 360" className="absolute" style={{ zIndex: 1 }}>
+		<svg viewBox="0 0 1930 360" className="absolute" style={{ zIndex: 1 }} ref={ref}>
 			<defs>
 				<style>
 					{

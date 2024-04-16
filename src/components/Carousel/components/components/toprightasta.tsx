@@ -73,6 +73,7 @@ const TopRightAsta: React.FC<{ onUnselected: () => void }> = ({
 						/>
 					</pattern>
 				</defs>
+				<a href="/historia">
 				<g transform="translate(0 6)">
 					<rect
 						className="b-tt-7"
@@ -111,6 +112,7 @@ const TopRightAsta: React.FC<{ onUnselected: () => void }> = ({
 						</tspan>
 					</text>
 				</g>
+				</a>
 			</g>
 		</React.Fragment>
 	)

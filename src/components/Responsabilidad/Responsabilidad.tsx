@@ -223,7 +223,7 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 						width={301.411}
 						height={276.96}
 						filterUnits="userSpaceOnUse">
-						<feOffset dy={3}  />
+						<feOffset dy={3} />
 						<feGaussianBlur stdDeviation={3} result="o-respo" />
 						<feFlood floodOpacity={0.502} />
 						<feComposite operator="in" in2="o-respo" />
@@ -324,6 +324,7 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 						transform="translate(160.07 909.33)"
 					/>
 				</g>
+
 				<text className="f-respo" transform="translate(728 1302)">
 					<tspan x={-443.275} y={66}>
 						{'+ DE 4.600 BENEFICIARIOS'}
@@ -334,24 +335,32 @@ const Responsabilidad: React.FC = (): JSX.Element => {
 						</tspan>
 					</tspan>
 				</text>
-				<g transform="translate(388 1460.031)" className='boton-segundo'>
+				<a
+					href="https://www.ocmaes.org/"
+					target="_blank"
+					rel="noopener noreferrer">
 					<g
-						className="w-respo"
-						transform="matrix(1, 0, 0, 1, -388, -1460.03)">
-						<path
-							className="h-respo"
-							d="M710.86,0H71.56C42.716,0,16.816,20.14,6.283,50.758L0,69.021H637c30.73,0,58.244-21.713,69.07-54.508Z"
-							transform="translate(388 1460.03)"
-						/>
+						transform="translate(388 1460.031)"
+						className="boton-segundo">
+						<g
+							className="w-respo"
+							transform="matrix(1, 0, 0, 1, -388, -1460.03)">
+							<path
+								className="h-respo"
+								d="M710.86,0H71.56C42.716,0,16.816,20.14,6.283,50.758L0,69.021H637c30.73,0,58.244-21.713,69.07-54.508Z"
+								transform="translate(388 1460.03)"
+							/>
+						</g>
+						<text
+							className="i-respo"
+							transform="translate(69.43 45.51)">
+							<tspan x={0} y={0}>
+								{'Conoce m\xE1s de La Fundaci\xF3n OCMAES '}
+							</tspan>
+						</text>
 					</g>
-					<text
-						className="i-respo"
-						transform="translate(69.43 45.51)">
-						<tspan x={0} y={0}>
-							{'Conoce m\xE1s de La Fundaci\xF3n OCMAES '}
-						</tspan>
-					</text>
-				</g>
+				</a>
+
 				<g className="v-respo" transform="matrix(1, 0, 0, 1, 0, 0)">
 					<path
 						className="j-respo"

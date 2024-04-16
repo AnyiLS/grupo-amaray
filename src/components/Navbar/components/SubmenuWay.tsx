@@ -1,11 +1,12 @@
 import React from 'react'
 
-const SubmenuWay: React.FC = (): JSX.Element => {
+const SubmenuWay: React.FC<{ref: any}> = ({ ref }): JSX.Element => {
 	return (
 		<svg
 			viewBox="0 0 1929 360"
 			className="absolute z-1"
-			style={{ zIndex: 1 }}>
+			style={{ zIndex: 1 }}
+			ref={ref}>
 			<defs>
 				<style>
 					{

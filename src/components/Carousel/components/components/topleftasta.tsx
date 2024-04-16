@@ -55,6 +55,7 @@ const TopLeftAsta: React.FC = (): JSX.Element => {
 						/>
 					</clipPath>
 				</defs>
+				<a href="/">
 				<g transform="translate(9 6)">
 					<image
 						width={240.325}
@@ -157,6 +158,7 @@ const TopLeftAsta: React.FC = (): JSX.Element => {
 						</g>
 					</g>
 				</g>
+				</a>
 			</g>
 		</React.Fragment>
 	)

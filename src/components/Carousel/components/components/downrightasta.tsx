@@ -5,7 +5,7 @@ const DownRightAsta: React.FC<{ onUnselected: () => void }> = ({
 }): JSX.Element => {
 	return (
 		<React.Fragment>
-			<g onClick={onUnselected} transform='translate(1064 480)'>
+			<g onClick={onUnselected} transform="translate(1064 480)">
 				<defs>
 					<style>
 						{
@@ -61,41 +61,44 @@ const DownRightAsta: React.FC<{ onUnselected: () => void }> = ({
 						/>
 					</pattern>
 				</defs>
-				<image
-					width={236.061}
-					height={242.582}
-					transform="translate(12.696) rotate(3)"
-					xlinkHref="/images/navbar/tt-5.png"
-				/>
-				<g transform="translate(162.845 68.596)">
-					<g
-						className="f-tt-5"
-						transform="matrix(1, 0, 0, 1, -162.84, -68.6)">
-						<path
-							className="a-tt-5"
-							d="M488.811,219.432H106.75v-.044c-30.282-1.152-57.306-24.659-68.858-60.185L0,0H488.811V.044C519.092,1.2,546.118,24.7,557.669,60.229l37.893,159.2Z"
-							transform="translate(162.84 68.6)"
-						/>
-					</g>
-					<g className="b-tt-5" transform="translate(0 0)">
-						<path
-							className="c-tt-5"
-							d="M488.811,219.432H106.75v-.044c-30.282-1.152-57.306-24.659-68.858-60.185L0,0H488.811V.044C519.092,1.2,546.118,24.7,557.669,60.229l37.893,159.2Z"
-							transform="translate(-153.516 62.686)"
-						/>
-					</g>
-					<path
-						className="d-tt-5"
-						d="M85.269,219.432H83.444v-.045C59.773,218.235,38.65,194.728,29.62,159.2L0,0H201.092V.045c23.67,1.151,44.8,24.659,53.824,60.184l29.62,159.2Z"
-						transform="translate(0 0)"
-					/>
-				</g>
 				<a href="/nuestros-aliados">
-				<text className="e-tt-5" transform="translate(439.064 170.05)">
-					<tspan x={2.932} y={28}>
-						{'Nuestros aliados '}
-					</tspan>
-				</text>
+					<image
+						width={236.061}
+						height={242.582}
+						transform="translate(12.696) rotate(3)"
+						xlinkHref="/images/navbar/tt-5.png"
+					/>
+					<g transform="translate(162.845 68.596)">
+						<g
+							className="f-tt-5"
+							transform="matrix(1, 0, 0, 1, -162.84, -68.6)">
+							<path
+								className="a-tt-5"
+								d="M488.811,219.432H106.75v-.044c-30.282-1.152-57.306-24.659-68.858-60.185L0,0H488.811V.044C519.092,1.2,546.118,24.7,557.669,60.229l37.893,159.2Z"
+								transform="translate(162.84 68.6)"
+							/>
+						</g>
+						<g className="b-tt-5" transform="translate(0 0)">
+							<path
+								className="c-tt-5"
+								d="M488.811,219.432H106.75v-.044c-30.282-1.152-57.306-24.659-68.858-60.185L0,0H488.811V.044C519.092,1.2,546.118,24.7,557.669,60.229l37.893,159.2Z"
+								transform="translate(-153.516 62.686)"
+							/>
+						</g>
+						<path
+							className="d-tt-5"
+							d="M85.269,219.432H83.444v-.045C59.773,218.235,38.65,194.728,29.62,159.2L0,0H201.092V.045c23.67,1.151,44.8,24.659,53.824,60.184l29.62,159.2Z"
+							transform="translate(0 0)"
+						/>
+					</g>
+
+					<text
+						className="e-tt-5"
+						transform="translate(439.064 170.05)">
+						<tspan x={2.932} y={28}>
+							{'Nuestros aliados '}
+						</tspan>
+					</text>
 				</a>
 			</g>
 		</React.Fragment>

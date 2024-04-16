@@ -1,11 +1,12 @@
 
 
-const SubmenuEtic = () => {
+const SubmenuEtic: React.FC<{ref: any}> = ({ ref }) => {
 	return (
 		<svg
 			viewBox="0 0 1920 354"
 			className="absolute z-1"
-			style={{ zIndex: 1 }}>
+			style={{ zIndex: 1 }}
+			ref={ref}>
 			<defs>
 				<style>
 					{

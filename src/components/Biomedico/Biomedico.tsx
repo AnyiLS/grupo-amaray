@@ -12,7 +12,7 @@ const Biomedico: React.FC = (): JSX.Element => {
 				<svg
 					width="100%"
 					height={'100%'}
-					viewBox="0 0 1920 1080"
+					viewBox="0 55 1920 1020"
 					preserveAspectRatio="none">
 					<defs>
 						<style>

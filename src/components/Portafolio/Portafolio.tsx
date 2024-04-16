@@ -3,6 +3,8 @@ import { carouselPortfolio } from 'mocks/portfolio.mocks'
 import type { CarouselPortfolio } from 'mocks/portfolio.mocks'
 import LeftCard from './components/LeftCard'
 import CenterCard from './components/CenterCard'
+import Elipses from './components/Elipses'
+import './Carousel.css'
 
 const Portafolio: React.FC = () => {
 	const [height, setHeight] = React.useState<string>('100vh')
@@ -239,11 +241,6 @@ const Portafolio: React.FC = () => {
 					viewBox="0 0 1920 1080"
 					preserveAspectRatio="none">
 					<defs>
-						<style>
-							{
-								'.a-portfolio-3,.e-portfolio-3{fill:#fff;}.a-portfolio-3{stroke:#707070;}.b-portfolio-3,.p-portfolio-3{fill:none;}.c-portfolio-3{fill:#e40032;}.ab-portfolio-3,.d-portfolio-3{fill:#001f5f;}.f-portfolio-3{opacity:0.45;clip-path:url(#a);}.g-portfolio-3{clip-path:url(#b);}.h-portfolio-3,.s-portfolio-3{isolation:isolate;}.i-portfolio-3{fill:gray;}.j-portfolio-3{fill:#d3d3d3;}.k-portfolio-3{fill:#c1c1c1;}.l-portfolio-3{fill:#a4a4a4;}.m-portfolio-3{clip-path:url(#d-portfolio-3);}.n-portfolio-3{clip-path:url(#e-portfolio-3);}.o-portfolio-3{fill:#1c164e;}.p-portfolio-3{stroke:#e7002a;stroke-miterlimit:10;stroke-width:3.044px;}.q-portfolio-3{clip-path:url(#f-portfolio-3);}.r-portfolio-3{clip-path:url(#g-portfolio-3);}.s-portfolio-3{opacity:0.36;mix-blend-mode:multiply;fill:url(#h-portfolio-3);}.t-portfolio-3{clip-path:url(#k-portfolio-3);}.u-portfolio-3{opacity:0.5;}.v-portfolio-3{fill:url(#n-portfolio-3);}.w-portfolio-3,.z-portfolio-3{fill:#182856;font-family:Silka-Bold, Silka;font-weight:700;}.w-portfolio-3{font-size:20px;}.x-portfolio-3{fill:url(#q-portfolio-3);}.y-portfolio-3{fill:url(#t-portfolio-3);}.z-portfolio-3{font-size:24px;}.aa-portfolio-3{fill:#c7c7cc;}.ab-portfolio-3{font-size:70px;font-family:Silka-SemiBold, Silka;font-weight:600;}.ac-portfolio-3{filter:url(#w-portfolio-3);}.ad-portfolio-3{filter:url(#u-portfolio-3);}.ae-portfolio-3{filter:url(#r-portfolio-3);}.af-portfolio-3{filter:url(#o-portfolio-3);}.ag-portfolio-3{filter:url(#l-portfolio-3);}'
-							}
-						</style>
 						<clipPath id="a-portfolio-3">
 							<rect
 								className="a-portfolio-3"
@@ -525,14 +522,18 @@ const Portafolio: React.FC = () => {
 												<LeftCard {...item} />
 											)}
 											{index === 1 && (
-												<CenterCard
-													{...item}
-													selected={over}
-													onOver={() => setOver(true)}
-													onLeave={() =>
-														setOver(false)
-													}
-												/>
+												<a href={item.to}>
+													<CenterCard
+														{...item}
+														selected={over}
+														onOver={() =>
+															setOver(true)
+														}
+														onLeave={() =>
+															setOver(false)
+														}
+													/>
+												</a>
 											)}
 											{index === 2 && (
 												<g
@@ -618,6 +619,7 @@ const Portafolio: React.FC = () => {
 							{'PORTAFOLIO '}
 						</tspan>
 					</text>
+					<Elipses />
 				</svg>
 			)}
 		</div>

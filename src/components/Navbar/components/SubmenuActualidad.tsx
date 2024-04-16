@@ -1,10 +1,11 @@
 
-const SubmenuActualidad = () => {
+const SubmenuActualidad: React.FC<{ ref: any }> = ({ ref }) => {
 	return (
 		<svg
 			viewBox="0 0 1929 360"
 			className="absolute z-1"
-			style={{ zIndex: 1 }}>
+			style={{ zIndex: 1 }}
+			ref={ref}>
 			<defs>
 				<style>
 					{

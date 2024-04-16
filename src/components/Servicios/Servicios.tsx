@@ -1,9 +1,12 @@
+import { CarouselInterface } from "flowbite";
 import { Carousel } from "flowbite-react";
 import { CarouselServiciosItems, carouselServiciosItems } from "mocks/carouselServicios.mocks";
 import React from "react";
 
 const Servicios: React.FC = () => {
   const [height, setHeight] = React.useState<string>("100vh");
+
+  const carouselRef = React.useRef<any>(undefined);
 
   React.useEffect(() => {
     const resizeImage = () => {
@@ -28,11 +31,17 @@ const Servicios: React.FC = () => {
 
   const [flowIndex, setFlowIndex] = React.useState<number>(0)
 
+  const handleChangeSlide = (position: number) => {
+    console.log(carouselRef)
+    // if (carouselRef.current) return carouselRef.current!.slideTo(position)
+    
+  }
+
   return (
-    <Carousel slide={false} onSlideChange={(index => setFlowIndex(index))}>
+    <Carousel slide={false} ref={carouselRef}>
       {carouselServiciosItems.map((item: CarouselServiciosItems, index: number) => (
         <React.Fragment key={index}>
-          {item.slide(height, flowIndex)}
+          {item.slide(height, flowIndex, handleChangeSlide)}
         </React.Fragment>
       ))}
     </Carousel>

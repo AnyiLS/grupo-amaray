@@ -6,6 +6,7 @@ import Slider2Card3 from './components/Slider2Card3'
 interface ISlider {
 	height: string
 	index: number
+	handleChangeSlide: (position: number) => void
 }
 
 export const Slider2: React.FC<ISlider> = ({ height }) => {

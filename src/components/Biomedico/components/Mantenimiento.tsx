@@ -4,7 +4,8 @@ import { IMantenimiento } from './Mantebiomedico'
 const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 	return (
 		<div>
-			<svg  width="100%"
+			<svg
+				width="100%"
 				height={'100%'}
 				viewBox="0 0 1920 1080"
 				preserveAspectRatio="none"
@@ -35,12 +36,12 @@ const Mantenimiento: React.FC<IMantenimiento> = ({ onClick }): JSX.Element => {
 						id="d-mante"
 						width={1}
 						height={1}
-						patternTransform="translate(3825.389 2151.781) rotate(-180)"
-						viewBox="492.798 3.77 1045.984 1001.87">
+						patternTransform="translate(4496.389 2151.781) rotate(-180)"
+						viewBox="17.573 226.867 1088.118 1042.227">
 						<image
 							preserveAspectRatio="xMidYMid slice"
-							width={1912.695}
-							height={1075.891}
+							width={1123.264}
+							height={1495.96}
 							xlinkHref="/images/mantenimiento.jpg"
 						/>
 					</pattern>

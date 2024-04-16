@@ -23,6 +23,7 @@ const Historia: React.FC = (): JSX.Element => {
 
 	const handleChangeStep = () => setSteps(steps + 1 > 16 ? 0 : steps + 1)
 	const handleLessStep = () => setSteps(steps - 1 < 0 ? 16 : steps - 1)
+	const handleChangeStepForce = (index: number) => setSteps(index)
 
 	return (
 		<div>
@@ -128,86 +129,102 @@ const Historia: React.FC = (): JSX.Element => {
 
 			{/* linea del tiempo */}
 			{steps === 0 ? (
-				<LifeLine1984 onClick={handleChangeStep} />
+				<LifeLine1984 onClick={handleChangeStep} handleChangeStepForce={handleChangeStepForce} />
 			) : steps === 1 ? (
 				<LifeLine1999
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 2 ? (
 				<LifeLine2000
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 3 ? (
 				<LifeLine2007
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 4 ? (
 				<LifeLine2009
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 5 ? (
 				<LifeLine20111
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 6 ? (
 				<LifeLine20112
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 7 ? (
 				<LifeLine2012
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 8 ? (
 				<LifeLine20122
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 9 ? (
 				<LifeLine20141
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 10 ? (
 				<LifeLine20142
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 11 ? (
 				<LifeLine2016
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 12 ? (
 				<LifeLine2017
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 13 ? (
 				<LifeLine20231
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 14 ? (
 				<LifeLine20232
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 15 ? (
 				<LifeLine20233
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : steps === 16 ? (
 				<LifeLine20234
 					onClick={handleChangeStep}
 					onLess={handleLessStep}
+					handleChangeStepForce={handleChangeStepForce}
 				/>
 			) : null}
 		</div>

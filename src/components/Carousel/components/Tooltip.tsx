@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tooltip: React.FC = (): JSX.Element => {
 	return (
-		<svg viewBox="0 0 232.321 279.885" width={232} height={279}>
+		<svg viewBox="0 0 232.321 279.885" width={200} height={247}>
 			<defs>
 				<style>
 					{

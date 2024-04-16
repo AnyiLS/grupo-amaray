@@ -8,9 +8,13 @@ import SubmenuWorkUs from './components/SubmenuWorkUs'
 import SubmenuActualidad from './components/SubmenuActualidad'
 
 const Navbar: React.FC = () => {
-	const [hover, setHover] = React.useState<string>('')
+	const [hover, setHover] = React.useState<string>('contactenos')
+	const [showSearchable, setShowSearchable] = React.useState<boolean>(false)
+
+	const subItemRef = React.useRef(null)
+
 	return (
-		<div>
+		<div className="navbar__container" id="navbar__container">
 			<svg
 				viewBox="0 0 1920 105"
 				width="100%"
@@ -74,7 +78,9 @@ const Navbar: React.FC = () => {
 							</tspan>
 						</text>
 					</g>
-					<g transform="translate(1495.944 36.252)">
+					<g
+						transform="translate(1495.944 36.252)"
+						onClick={() => setShowSearchable(!showSearchable)}>
 						<path
 							className="e"
 							d="M16.508,0h-2.9a3.423,3.423,0,0,1-.48.136A14.924,14.924,0,0,0,3.742,5.109a15.105,15.105,0,0,0,1.748,21.6,14.644,14.644,0,0,0,16.611,1.5,1.154,1.154,0,0,1,1.633.246c1.456,1.516,2.96,2.986,4.45,4.469,1.045,1.04,2.062,2.11,3.157,3.094a3.509,3.509,0,0,0,3.606.929A3.749,3.749,0,0,0,37.1,34.661V33.355A7.887,7.887,0,0,0,34.908,30.2c-2.156-2.114-4.259-4.283-6.425-6.387a1.208,1.208,0,0,1-.263-1.748,13.324,13.324,0,0,0,1.753-5.326A14.867,14.867,0,0,0,19.927.853C18.82.472,17.649.279,16.508,0M15.045,26.175A11.123,11.123,0,1,1,26.151,15.061,11.132,11.132,0,0,1,15.045,26.175"
@@ -88,7 +94,8 @@ const Navbar: React.FC = () => {
 					</g>
 					<g
 						transform="translate(1238 27)"
-						onMouseOver={() => setHover('contactenos')}>
+						onClick={() => setHover(hover === 'contactenos' ? '' : 'contactenos')}
+>
 						<rect
 							className="contactenos-a"
 							width={137}
@@ -125,7 +132,7 @@ const Navbar: React.FC = () => {
 					</g>
 					<g
 						transform="translate(1086.982 27)"
-						onMouseOver={() => setHover('trabaje')}>
+						onClick={() => setHover(hover === 'trabaje' ? '' : 'trabaje')}>
 						<path
 							className="trabaje-a"
 							d="M0,0H138.964V76H0Z"
@@ -159,7 +166,7 @@ const Navbar: React.FC = () => {
 					</g>
 					<g
 						transform="translate(951 27)"
-						onMouseOver={() => setHover('etica')}>
+						onClick={() => setHover(hover === 'etica' ? '' : 'etica')}>
 						<rect
 							className="etica-a"
 							width={121}
@@ -194,7 +201,7 @@ const Navbar: React.FC = () => {
 					</g>
 					<g
 						transform="translate(823 27)"
-						onMouseOver={() => setHover('actualidad')}>
+						onClick={() => setHover(hover === 'actualidad' ? '' : 'actualidad')}>
 						<path
 							className="actu-a"
 							d="M0,0H117V76H0Z"
@@ -228,7 +235,7 @@ const Navbar: React.FC = () => {
 					</g>
 					<g
 						transform="translate(692 27)"
-						onMouseOver={() => setHover('solucion')}>
+						onClick={() => setHover(hover === 'solucion' ? '' : 'solucion')}>
 						<rect
 							width={123}
 							height={76}
@@ -262,7 +269,7 @@ const Navbar: React.FC = () => {
 					</g>
 					<g
 						transform="translate(554 27)"
-						onMouseOver={() => setHover('trayectoria')}>
+						onClick={() => setHover(hover === 'trayectoria' ? '' : 'trayectoria')}>
 						<rect
 							className="trayectoria-a"
 							width={121}
@@ -297,11 +304,10 @@ const Navbar: React.FC = () => {
 							/>
 						)}
 					</g>
-					<a href='/'>
+					<a href="/">
 						<g
 							transform="translate(468 27)"
-							onMouseOver={() => setHover('home')}
-							onMouseLeave={() => setHover('')}>
+							onClick={() => setHover(hover === 'home' ? '' : 'home')}>
 							<rect
 								className="a"
 								width={78}
@@ -412,12 +418,58 @@ const Navbar: React.FC = () => {
 					</a>
 				</g>
 			</svg>
-			{hover === 'trayectoria' && <SubmenuWay />}
-			{hover === 'solucion' && <SubmenuSolution />}
-			{hover === 'contactenos' && <SubmenuContact />}
-			{hover === 'etica' && <SubmenuEtic />}
-			{hover === 'trabaje' && <SubmenuWorkUs />}
-			{hover === 'actualidad' && <SubmenuActualidad />}
+			{showSearchable && (
+				<svg style={{ position: 'absolute', width: '100%', transform: 'translate(620px, -6px)', maxWidth: 495 }}>
+					<defs>
+						<style>
+							{
+								'.a-item-1826{fill:#001f5f;}.b-item-1826{fill:#fff;}.c-item-1826{fill:#4d4d4d;}.d-item-1826{filter:url(#a-item-1826);}'
+							}
+						</style>
+						<filter
+							id="a-item-1826"
+							x={0}
+							y={0}
+							width={502.806}
+							height={69.876}
+							filterUnits="userSpaceOnUse">
+							<feOffset dy={3} />
+							<feGaussianBlur stdDeviation={3} result="b" />
+							<feFlood floodOpacity={0.502} />
+							<feComposite operator="in" in2="b" />
+							<feComposite in="SourceGraphic" />
+						</filter>
+					</defs>
+					<g transform="translate(-628.194 -836)">
+						<g
+							className="d-item-1826"
+							transform="matrix(1, 0, 0, 1, 628.19, 836)">
+							<path
+								className="a-item-1826"
+								d="M60.66,0A59.242,59.242,0,0,0,27.892,9.8,56.491,56.491,0,0,0,6.515,35.781L0,51.876H422.4a62.152,62.152,0,0,0,34.75-10.516,59.221,59.221,0,0,0,22.4-27.812L484.806,0Z"
+								transform="translate(9 6)"
+							/>
+						</g>
+						<path
+							className="b-item-1826"
+							d="M491.221,10H71.068c-22.735,0-43.15,13.483-51.452,33.982L14.663,56.209H433c24.222,0,45.909-14.537,54.441-36.493Z"
+							transform="translate(626.685 834.833)"
+						/>
+						<rect
+							className="c-item-1826"
+							width={1.822}
+							height={34.243}
+							transform="translate(683.282 850.97)"
+						/>
+					</g>
+				</svg>
+			)}
+			{hover === 'trayectoria' && <SubmenuWay ref={subItemRef} />}
+			{hover === 'solucion' && <SubmenuSolution ref={subItemRef}/>}
+			{hover === 'contactenos' && <SubmenuContact ref={subItemRef}/>}
+			{hover === 'etica' && <SubmenuEtic ref={subItemRef}/>}
+			{hover === 'trabaje' && <SubmenuWorkUs ref={subItemRef}/>}
+			{hover === 'actualidad' && <SubmenuActualidad ref={subItemRef}/>}
 		</div>
 	)
 }

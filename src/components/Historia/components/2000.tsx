@@ -3,9 +3,10 @@ import React from "react";
 export interface ILifeLine2000 {
 	onClick: () => void
 	onLess: () => void
+  handleChangeStepForce: (index: number) => void
 }
 
-const LifeLine2000: React.FC<ILifeLine2000> = ({ onClick, onLess }): JSX.Element => {
+const LifeLine2000: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }): JSX.Element => {
     return (
         <svg viewBox="0 0 1920 874.839">
         <defs>
@@ -393,87 +394,87 @@ const LifeLine2000: React.FC<ILifeLine2000> = ({ onClick, onLess }): JSX.Element
             d="M20.633,22.269l4.892,6.658a.185.185,0,0,1,.035.107l.028,5.213a.183.183,0,0,1-.181.183l-.727,0a.182.182,0,0,1-.183-.181l-.01-1.849-2.63.013.01,1.849a.182.182,0,0,1-.181.183l-.727,0a.181.181,0,0,1-.182-.181l-.025-4.789a.181.181,0,0,1,.181-.183l.727,0a.183.183,0,0,1,.183.181l.01,1.849,2.63-.013-.01-1.978-4.442-6.047-3.779.019L11.871,29.4l.01,1.977,2.63-.014-.01-1.849a.181.181,0,0,1,.181-.183l.727,0a.182.182,0,0,1,.183.181l.025,4.789a.182.182,0,0,1-.181.183l-.727,0a.182.182,0,0,1-.183-.181l-.01-1.849-2.63.014.01,1.849a.183.183,0,0,1-.181.183l-.727,0a.182.182,0,0,1-.183-.181l-.027-5.213A.182.182,0,0,1,10.813,29l4.822-6.71a.184.184,0,0,1,.147-.076l4.7-.024a.181.181,0,0,1,.147.074m-7.576-5.444L5.186,14.313a.176.176,0,0,0-.112,0L.125,15.95a.182.182,0,0,0-.115.23l.228.691a.182.182,0,0,0,.23.115l1.755-.58.826,2.5-1.756.58a.182.182,0,0,0-.115.23l.228.691a.183.183,0,0,0,.23.115l4.547-1.5a.181.181,0,0,0,.115-.23l-.228-.691a.183.183,0,0,0-.23-.115l-1.756.581-.825-2.5,1.877-.621,7.148,2.282.584,1.766.6,1.821L9.092,27.4l-1.878.62-.825-2.5,1.756-.58a.182.182,0,0,0,.115-.23l-.229-.691a.182.182,0,0,0-.229-.115l-4.547,1.5a.182.182,0,0,0-.115.23l.228.691a.182.182,0,0,0,.23.115l1.756-.581.826,2.5-1.756.581a.182.182,0,0,0-.116.23l.229.691a.182.182,0,0,0,.23.115l4.949-1.637a.182.182,0,0,0,.091-.067l4.821-6.709a.18.18,0,0,0,.025-.163l-1.477-4.467a.182.182,0,0,0-.117-.117m9.706-1.23L30.607,13a.18.18,0,0,0,.09-.067L33.74,8.7a.182.182,0,0,0-.042-.254l-.591-.424a.181.181,0,0,0-.254.042l-1.08,1.5L29.639,8.031l1.079-1.5a.181.181,0,0,0-.041-.254l-.591-.424a.181.181,0,0,0-.254.042L27.038,9.782a.182.182,0,0,0,.041.254l.591.424a.182.182,0,0,0,.254-.042L29,8.918l2.136,1.535-1.154,1.606L22.86,14.414l-3.069-2.205-.039-7.5L20.907,3.1l2.136,1.535-1.079,1.5A.181.181,0,0,0,22,6.389l.591.424a.181.181,0,0,0,.254-.042l2.795-3.889a.181.181,0,0,0-.042-.254L25.012,2.2a.182.182,0,0,0-.254.042l-1.08,1.5L21.544,2.214l1.079-1.5a.182.182,0,0,0-.042-.254L21.99.034a.181.181,0,0,0-.254.042L18.694,4.309a.185.185,0,0,0-.034.107l.043,8.262a.181.181,0,0,0,.076.147L22.6,15.57a.182.182,0,0,0,.163.025m13.209,1.089.221-.693a.182.182,0,0,0-.118-.229l-4.965-1.585a.183.183,0,0,0-.113,0l-7.844,2.594a.18.18,0,0,0-.116.117l-1.43,4.482a.181.181,0,0,0,.026.163l4.891,6.659a.185.185,0,0,0,.092.065l4.965,1.585a.182.182,0,0,0,.229-.118l.221-.693a.181.181,0,0,0-.117-.229l-1.762-.563.8-2.505,1.762.562a.182.182,0,0,0,.229-.117l.221-.693a.182.182,0,0,0-.118-.229L28.481,23.8a.181.181,0,0,0-.228.118l-.222.693a.181.181,0,0,0,.118.228l1.761.563-.8,2.505-1.884-.6-4.442-6.048,1.149-3.6,7.124-2.356,1.883.6-.8,2.505-1.762-.563a.183.183,0,0,0-.229.118l-.221.693a.181.181,0,0,0,.118.228l4.562,1.456a.182.182,0,0,0,.229-.117l.222-.693a.183.183,0,0,0-.118-.229l-1.762-.562.8-2.505,1.762.563a.183.183,0,0,0,.229-.118M13.611,15.61,17.4,12.82a.183.183,0,0,0,.074-.148L17.418,4.41a.179.179,0,0,0-.035-.106L14.291.107a.181.181,0,0,0-.254-.039L13.451.5a.182.182,0,0,0-.038.254l1.1,1.489L12.392,3.8,11.3,2.313a.182.182,0,0,0-.254-.038l-.586.431a.182.182,0,0,0-.038.254l2.84,3.856a.182.182,0,0,0,.254.038l.586-.431a.182.182,0,0,0,.039-.254l-1.1-1.489,2.118-1.56L16.33,4.713l.049,7.5-3.042,2.241L6.185,12.186,5.013,10.593,7.13,9.034l1.1,1.489a.182.182,0,0,0,.254.038l.586-.431a.182.182,0,0,0,.039-.254L6.265,6.02a.181.181,0,0,0-.254-.039l-.586.431a.182.182,0,0,0-.038.254l1.1,1.489L4.366,9.715l-1.1-1.489a.182.182,0,0,0-.254-.039l-.586.431a.182.182,0,0,0-.038.254l3.092,4.2a.178.178,0,0,0,.091.065l7.874,2.5a.183.183,0,0,0,.163-.027"
             transform="translate(359 1064.889)"
           />
-          <text className="item-102-q" transform="translate(199 1132)">
+          <text className="item-102-q" transform="translate(199 1132)"  onClick={() => handleChangeStepForce(0)}>
             <tspan x={0} y={0}>
               {"1984"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(279 1132)">
+          <text className="item-102-q" transform="translate(279 1132)"  onClick={() => handleChangeStepForce(1)}>
             <tspan x={0} y={0}>
               {"1999"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(358 1132)">
+          <text className="item-102-q" transform="translate(358 1132)"  onClick={() => handleChangeStepForce(2)}>
             <tspan x={0} y={0}>
               {"2000"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(441 1132)">
+          <text className="item-102-q" transform="translate(441 1132)"  onClick={() => handleChangeStepForce(3)}>
             <tspan x={0} y={0}>
               {"2007"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(522 1132)">
+          <text className="item-102-q" transform="translate(522 1132)"  onClick={() => handleChangeStepForce(4)}>
             <tspan x={0} y={0}>
               {"2009"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(605 1132)">
+          <text className="item-102-q" transform="translate(605 1132)"  onClick={() => handleChangeStepForce(5)}>
             <tspan x={0} y={0}>
               {"2011"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(681 1132)">
+          <text className="item-102-q" transform="translate(681 1132)"  onClick={() => handleChangeStepForce(6)}>
             <tspan x={0} y={0}>
               {"2011"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(758 1132)">
+          <text className="item-102-q" transform="translate(758 1132)"  onClick={() => handleChangeStepForce(7)}>
             <tspan x={0} y={0}>
               {"2012"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(836 1132)">
+          <text className="item-102-q" transform="translate(836 1132)"  onClick={() => handleChangeStepForce(8)}>
             <tspan x={0} y={0}>
               {"2012"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(915 1132)">
+          <text className="item-102-q" transform="translate(915 1132)"  onClick={() => handleChangeStepForce(9)}>
             <tspan x={0} y={0}>
               {"2014"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(993 1132)">
+          <text className="item-102-q" transform="translate(993 1132)"  onClick={() => handleChangeStepForce(10)}>
             <tspan x={0} y={0}>
               {"2014"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(1073 1132)">
+          <text className="item-102-q" transform="translate(1073 1132)"  onClick={() => handleChangeStepForce(11)}>
             <tspan x={0} y={0}>
               {"2016"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(1150 1132)">
+          <text className="item-102-q" transform="translate(1150 1132)"  onClick={() => handleChangeStepForce(12)}>
             <tspan x={0} y={0}>
               {"2017"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(1229 1132)">
+          <text className="item-102-q" transform="translate(1229 1132)"  onClick={() => handleChangeStepForce(13)}>
             <tspan x={0} y={0}>
               {"2023"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(1307 1132)">
+          <text className="item-102-q" transform="translate(1307 1132)"  onClick={() => handleChangeStepForce(14)}>
             <tspan x={0} y={0}>
               {"2023"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(1386 1132)">
+          <text className="item-102-q" transform="translate(1386 1132)"  onClick={() => handleChangeStepForce(15)}>
             <tspan x={0} y={0}>
               {"2023"}
             </tspan>
           </text>
-          <text className="item-102-q" transform="translate(1464 1132)">
+          <text className="item-102-q" transform="translate(1464 1132)"  onClick={() => handleChangeStepForce(16)}>
             <tspan x={0} y={0}>
               {"2023"}
             </tspan>

@@ -6,6 +6,7 @@ import RedPoint from './RedPoint'
 interface ISlider {
 	height: string
 	index: number
+	handleChangeSlide: (position: number) => void
 }
 
 export const Slider3: React.FC<ISlider> = ({ height }) => {

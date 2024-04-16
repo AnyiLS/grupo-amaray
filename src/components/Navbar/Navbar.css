@@ -124,3 +124,14 @@
 	stroke: #e40032;
 	fill: none;
 }
+
+.navbar__container-float {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	top: 0%;
+}
+
+.navbar__container {
+	position: relative;
+}

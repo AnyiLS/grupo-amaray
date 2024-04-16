@@ -1,6 +1,6 @@
 import { ILifeLine2000 } from './2000'
 
-const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess }) => {
+const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess, handleChangeStepForce }) => {
 	return (
 		<svg viewBox="0 0 1920 874.839">
 			<defs>
@@ -431,119 +431,120 @@ const LifeLine2009: React.FC<ILifeLine2000> = ({ onClick, onLess }) => {
 					/>
 					<text
 						className="item-104-q"
-						transform="translate(199 1132)">
+						transform="translate(199 1132)"
+						onClick={() => handleChangeStepForce(0)}>
 						<tspan x={0} y={0}>
 							{'1984'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(279 1132)">
+						transform="translate(279 1132)" onClick={() => handleChangeStepForce(1)}>
 						<tspan x={0} y={0}>
 							{'1999'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(358 1132)">
+						transform="translate(358 1132)"  onClick={() => handleChangeStepForce(2)}>
 						<tspan x={0} y={0}>
 							{'2000'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(441 1132)">
+						transform="translate(441 1132)"  onClick={() => handleChangeStepForce(3)}>
 						<tspan x={0} y={0}>
 							{'2007'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(522 1132)">
+						transform="translate(522 1132)" onClick={() => handleChangeStepForce(4)}>
 						<tspan x={0} y={0}>
 							{'2009'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(605 1132)">
+						transform="translate(605 1132)" onClick={() => handleChangeStepForce(5)}>
 						<tspan x={0} y={0}>
 							{'2011'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(681 1132)">
+						transform="translate(681 1132)" onClick={() => handleChangeStepForce(6)}>
 						<tspan x={0} y={0}>
 							{'2011'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(758 1132)">
+						transform="translate(758 1132)" onClick={() => handleChangeStepForce(7)}>
 						<tspan x={0} y={0}>
 							{'2012'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(836 1132)">
+						transform="translate(836 1132)" onClick={() => handleChangeStepForce(8)}>
 						<tspan x={0} y={0}>
 							{'2012'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(915 1132)">
+						transform="translate(915 1132)" onClick={() => handleChangeStepForce(9)}>
 						<tspan x={0} y={0}>
 							{'2014'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(993 1132)">
+						transform="translate(993 1132)" onClick={() => handleChangeStepForce(10)}>
 						<tspan x={0} y={0}>
 							{'2014'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(1073 1132)">
+						transform="translate(1073 1132)" onClick={() => handleChangeStepForce(11)}>
 						<tspan x={0} y={0}>
 							{'2016'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(1150 1132)">
+						transform="translate(1150 1132)" onClick={() => handleChangeStepForce(12)}>
 						<tspan x={0} y={0}>
 							{'2017'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(1229 1132)">
+						transform="translate(1229 1132)" onClick={() => handleChangeStepForce(13)}>
 						<tspan x={0} y={0}>
 							{'2023'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(1307 1132)">
+						transform="translate(1307 1132)" onClick={() => handleChangeStepForce(14)}>
 						<tspan x={0} y={0}>
 							{'2023'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(1386 1132)">
+						transform="translate(1386 1132)" onClick={() => handleChangeStepForce(15)}>
 						<tspan x={0} y={0}>
 							{'2023'}
 						</tspan>
 					</text>
 					<text
 						className="item-104-q"
-						transform="translate(1464 1132)">
+						transform="translate(1464 1132)" onClick={() => handleChangeStepForce(16)}>
 						<tspan x={0} y={0}>
 							{'2023'}
 						</tspan>
