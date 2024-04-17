@@ -1,9 +1,16 @@
 import React from 'react'
+import useGeneral from 'hooks/general.hook'
+import FilosofiaMobile from './FilosofiaMobile';
 
-const Filosofia = () => {
+const Filosofia: React.FC = () => {
+	/** Hooks */
+	const { width } = useGeneral();
+
 	return (
 		<div>
-			<svg
+			{width > 768 ? (
+				<React.Fragment>
+					<svg
 				width="100%"
 				height={'100%'}
 				viewBox="0 0 1920 1474"
@@ -821,6 +828,12 @@ const Filosofia = () => {
 					</text>
 				</g>
 			</svg>
+				</React.Fragment>
+			) : (
+				<React.Fragment>
+					<FilosofiaMobile/>
+				</React.Fragment>
+			)}
 		</div>
 	)
 }

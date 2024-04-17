@@ -9,9 +9,14 @@ interface ISlider {
 	handleChangeSlide: (position: number) => void
 }
 
-export const Slider2: React.FC<ISlider> = ({ height }) => {
+export const Slider2: React.FC<ISlider> = ({ height, index }) => {
 	const [grandImage, setGrandImage] = React.useState<boolean>(false)
 	const [hoverCard, setHoverCard] = React.useState<number | null>(null)
+
+	React.useEffect(() => {
+		if (index === 1) setTimeout(() => setGrandImage(true), 2000)
+		else setTimeout(() => setGrandImage(false), 1000)
+	}, [index])
 
 	return (
 		<svg

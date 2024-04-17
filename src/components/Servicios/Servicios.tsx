@@ -5,6 +5,7 @@ import React from "react";
 
 const Servicios: React.FC = () => {
   const [height, setHeight] = React.useState<string>("100vh");
+  const [slideIndex, setSlideIndex] = React.useState<number>(0)
 
   const carouselRef = React.useRef<any>(undefined);
 
@@ -32,16 +33,17 @@ const Servicios: React.FC = () => {
   const [flowIndex, setFlowIndex] = React.useState<number>(0)
 
   const handleChangeSlide = (position: number) => {
-    console.log(carouselRef)
-    // if (carouselRef.current) return carouselRef.current!.slideTo(position)
+    const carousel: any = document.querySelector('.next-button')
+    console.log(carousel)
+    carousel!.click()
     
   }
 
   return (
-    <Carousel slide={false} ref={carouselRef}>
+    <Carousel slide={false} onSlideChange={(e) => setSlideIndex(e)} ref={carouselRef} rightControl={<button className="next-button"></button>}>
       {carouselServiciosItems.map((item: CarouselServiciosItems, index: number) => (
         <React.Fragment key={index}>
-          {item.slide(height, flowIndex, handleChangeSlide)}
+          {item.slide(height, slideIndex, handleChangeSlide)}
         </React.Fragment>
       ))}
     </Carousel>

@@ -23,16 +23,21 @@ const App: React.FC = (): JSX.Element => {
 	return (
 		<React.Suspense fallback={null}>
 			<Flowbite theme={{ theme: customTheme }}>
-				{showVideoPopup && window.location.pathname === '/' && (
+				{showVideoPopup && window.location.pathname === '/' ? (
 					<Video onCloseVideo={() => setShowVideoPopup(false)} />
+				) : (
+					<React.Fragment>
+						{width >= 768 ? <Navbar /> : <NavbarMovil />}
+						<main className="mt-[5.4%]">
+							<RouterProvider router={router} />
+							{width >= 768 ? <Footer /> : <FooterMobile />}
+						</main>
+						{window.location.pathname !== '/contactenos' && (
+							<FixedContact />
+						)}
+						<FixedSocialNetworks />
+					</React.Fragment>
 				)}
-				{width >= 768 ? <Navbar /> : <NavbarMovil />}
-				<RouterProvider router={router} />
-				{width >= 768 ? <Footer /> : <FooterMobile />}
-				{window.location.pathname !== '/contactenos' && (
-					<FixedContact />
-				)}
-				<FixedSocialNetworks />
 			</Flowbite>
 		</React.Suspense>
 	)

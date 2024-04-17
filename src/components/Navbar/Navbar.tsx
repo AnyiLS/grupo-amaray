@@ -8,7 +8,7 @@ import SubmenuWorkUs from './components/SubmenuWorkUs'
 import SubmenuActualidad from './components/SubmenuActualidad'
 
 const Navbar: React.FC = () => {
-	const [hover, setHover] = React.useState<string>('contactenos')
+	const [hover, setHover] = React.useState<string>('')
 	const [showSearchable, setShowSearchable] = React.useState<boolean>(false)
 
 	const subItemRef = React.useRef(null)
